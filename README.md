@@ -4,7 +4,7 @@
 
 Working to rebuild my site from scratch 
 
-TODO
-- figure a blog platform
-- connect contact form to email
-- content :<
+Deliverables:
+- connect medium api for blog, blog presented in cards.
+- use react
+- 
