@@ -13,7 +13,10 @@ As a User:
   - When cards are clicked a modal appears with project details.
 - I can message the owner of the site and find out information about them.
 
+ToDos:
+complete nav
+tune timing animation on hamburger nav
+
 
 Technologies used: 
 React 
-[Material UI](http://www.material-ui.com/#/get-started/usage)

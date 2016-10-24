@@ -4,16 +4,22 @@ import './App.css';
 
 class App extends Component {
   render() {
+    
     return (
-      <div className="nav">
-        Rachel Ralston
-        <div class="hamburger-box">
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
-        </div>
+      <div>
+        <HamburgerButton />
       </div>
     );
+  };
+};
+
+class HamburgerButton extends React.Component {
+  render(){
+    return (
+      <button className="c-hamburger c-hamburger-x">
+        <span>toggle menu</span>
+      </button>
+    )
   }
 }
 
