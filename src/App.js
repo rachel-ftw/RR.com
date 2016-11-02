@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import ocean from './ocean.jpg';
+// var BackgroundImg = require("./ocean.jpg")
 import './App.css';
 
 class App extends Component {
   render() {
     
     return (
-      <div>
-        <HamburgerButton />
+      <div className="splash">
+        <div className="left-nav">
+          <h1>RACHEL</h1>
+          <h1>RALSTON</h1>
+          Full Stack Engineer
+        </div>
+        <div className="right-hero">
+          <div className="home-hero"></div>
+          <img className="home-hero-img" src={ocean}></img>
+        </div>
       </div>
     );
   };
 };
 
-class HamburgerButton extends React.Component {
-  render(){
-    return (
-      <button className="c-hamburger c-hamburger-x">
-        <span>toggle menu</span>
-      </button>
-    )
-  }
-}
 
 export default App;
