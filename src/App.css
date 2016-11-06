@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Bungee Hairline';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Hairline'), local('BungeeHairline-Regular'), url(https://fonts.gstatic.com/s/bungeehairline/v2/8Li3dr3whdkxuk7pmLaZaZ16wW5UEL6hOOm3lnIQ28I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +48,11 @@ body {
 
 h1 {
   margin: 0;
+  font-family: 'Bungee Hairline';
+}
+
+p {
+  font-family: 'Open Sans';
 }
 /*
 <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Open+Sans:300,400,600,700" rel="stylesheet">
