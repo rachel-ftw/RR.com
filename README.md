@@ -14,8 +14,15 @@ As a User:
 - I can message the owner of the site and find out information about them.
 
 ToDos:
-complete nav
 tune timing animation on hamburger nav
+redo flex to grid 
+    - (hero info panel)[http://gridbyexample.com/patterns/hero-image-panel/]
+    - (what I've learned grid)[https://css-tricks.com/things-ive-learned-css-grid-layout/]
+    - (complete guide to grid)[https://css-tricks.com/snippets/css/complete-guide-grid/]
+incorporate break points
+    - what are standard break points. 
+    - redo for mobile first
+research medium api
 
 
 Technologies used: 

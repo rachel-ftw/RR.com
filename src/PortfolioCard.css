@@ -1,4 +1,10 @@
 .portfolio-card {
-  display: flex;
-  flex-direction: column;
+  min-width: 29%;
+  max-width: 29%;
+  min-height: 48%;
+  max-height: 48%;
+  background-color: white;
+  padding: 10px 5px;
+  margin: 10px;
+  border-radius: 2px;
 }
