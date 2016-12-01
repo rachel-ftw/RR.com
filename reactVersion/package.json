@@ -10,14 +10,13 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "feedparser": "^1.1.5",
     "font-awesome": "^4.7.0",
     "material-ui": "^0.16.0",
+    "medium-sdk": "0.0.4",
     "normalize.css": "^4.2.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-tap-event-plugin": "^1.0.0",
-    "rss-parser": "^2.5.2",
     "serve-favicon": "^2.3.0"
   },
   "scripts": {

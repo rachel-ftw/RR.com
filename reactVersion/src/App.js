@@ -2,41 +2,26 @@ import React, { Component } from 'react'
 import './App.css'
 import PortfolioCard from './PortfolioCard'
 import HamburgerButton from './hamburger'
-let FeedParser = require('feedparser'),
-  request = require('request')
+var $ = require('jquery');
+
 
 class App extends Component {
 
   render() {
-  let req = request('https://medium.com/feed/@rachel_ftw'),
-    feedparser = new FeedParser()
-
-  req.on('error', (error) => {
-    console.log('yo, you got an error dude.')
-  })
-
-  req.on('response', (res) => {
-    let stream = this
-    if (res.statusCode !== 200) 
-      this.emit('error', new Error('Bad status code'))
-    stream.pipe(feedparser)
-  })
-   
-   
-  feedparser.on('error', (error) => {
-    // always handle errors 
-  })
-
-  feedparser.on('readable', () => {
-    // This is where the action is! 
-    let stream = this, 
-      meta = this.meta, // **NOTE** the "meta" is always available in the context of the feedparser instance 
-      item
-   
-    while(item === stream.read()) {
-      console.log('it\'s your item',item, meta)
-    }
-  })
+    console.log('oh hai')
+    $(document).ready(() => {
+      var feed = "https://medium.com/feed/@rachel_ftw";
+    
+      $.ajax(feed, {
+          accepts:{
+              xml:"application/rss+xml"
+          },
+          dataType:"xml",
+          success:(data) => {
+            console.log(data)
+          }
+        })
+      })
     
     return (
       <div className="splash">
