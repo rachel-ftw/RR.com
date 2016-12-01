@@ -8,6 +8,7 @@ Working to rebuild my site from scratch
 TODO:
 - I can interact with portfolio cards
   - When cards are clicked a modal appears with project details.
+- Incorporate material design elements
 
 ####BACKLOG
 - I can read a blog
