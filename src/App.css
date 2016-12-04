@@ -57,11 +57,6 @@ body {
   align-items: center;
 }
 
-#RachelImg {
-  max-height:150px;
-  border-radius: 100px;
-}
-
 #about {
   display: flex;
   flex-direction: row;
@@ -70,7 +65,13 @@ body {
   padding: 20px 40px;
   border-radius: 2px;
 }
-.social-links {
+
+#RachelImg {
+  max-height:150px;
+  border-radius: 100px;
+}
+
+#social-links {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -78,7 +79,7 @@ body {
   align-self: flex-end;
 }
 
-.social-links .fa {
+#social-links .fa {
   margin: 0px 10px;
   color: #ff3264;
 }

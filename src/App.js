@@ -13,7 +13,7 @@ class App extends Component {
           <div id="about">
             <div>
               <img id="RachelImg" role="presentation" src="./rachel_ralston.jpg" />
-              <div className="social-links">
+              <div id="social-links">
                 <a href="https://github.com/rachel-ftw"><i className="fa fa-lg fa-github" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/rachelralston"><i className="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
                 <a href="https://dribbble.com/rachelralston"><i className="fa fa-lg fa-dribbble" aria-hidden="true"></i></a>
