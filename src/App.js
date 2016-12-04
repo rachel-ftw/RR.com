@@ -1,29 +1,48 @@
 import React, { Component } from 'react'
 import './App.css'
-import PortfolioCard from './PortfolioCard'
 
 class App extends Component {
   render() {
     return (
-      <div className="splash">
+      <div className="content">
         <div className="primary-nav">
-          <div id="nav-content">
-            <h1 className="myName">RACHEL RALSTON</h1>
-            <p id="sub-title">full stack engineer</p>
-          </div>
-          <div id="nav-link-box">
-            <a className="nav-links" href="#">about</a>
-            <a className="nav-links" href="#">portfolio</a>
-            <a className="nav-links" href="#">writing</a>
-          </div>
-          <div className="social-links">
-            <i className="fa fa-lg fa-github" aria-hidden="true"></i>
-            <i className="fa fa-lg fa-twitter" aria-hidden="true"></i>
-            <i className="fa fa-lg fa-dribbble" aria-hidden="true"></i>
-          </div>
+          <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
+          <p id="sub-title">full stack engineer</p>
         </div>
-        <div className="main">
-          <div></div>
+        <div id="main">
+          <div id="about">
+            <div>
+              <img id="RachelImg" src="./rachel_ralston.jpg" />
+              <div className="social-links">
+                <a href="#"><i className="fa fa-lg fa-github" aria-hidden="true"></i></a>
+                <a href="#"><i className="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i className="fa fa-lg fa-dribbble" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div id="about-words">
+              <p>I'm a software engineer living in Oakland CA.  My early career focused on marketing and design, running a small branding company and leading marketing for a multimillion dollar manufacturer. After 5 years in those fields I realized that I was unahppy and board and got me to where I am today. </p>
+              <p>I love software engineering because lets me solve interesting problems and make useful things. I'm delighted that I found things that address everything I'm good at, from working with people to problem solving to creative thinking. </p>
+              <p>Non-tech loves include rock climbing, dancing, hiking with this lady, meditation and yoga.</p>
+              <h3>Technologies</h3>
+              <div id="technologies">
+                <div>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+                <div>
+                  <p>Javascript</p>
+                  <p>Node.js</p>
+                </div>
+                <div>
+                  <p>Ruby</p>
+                  <p>Python</p>
+                </div>
+                <div>
+                  <p>Tenson Flow</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

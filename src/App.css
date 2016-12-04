@@ -17,21 +17,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.splash {
+.content {
   display: flex;
   flex-direction: column;
 }
 
-.main {
-  display:flex;
-  flex-direction: column;
-  background-color: rgba(255,175,135,.5);
-  background-image: url("ocean.jpg");
-  /*min-height: 100%;*/
-}
 
 
 .primary-nav {
@@ -44,7 +37,7 @@ body {
   align-items: center;
 }
 
-.myName {
+#rachelRalstonLogo {
   margin: 0;
   padding: 0;
   font-size: 2em;
@@ -66,6 +59,7 @@ p {
 #sub-title {
   margin: 0px;
   font-size: 1.2em;
+  color: #888;
 }
 
 #nav-link-box {
@@ -75,19 +69,8 @@ p {
   align-items: center;
 }
 
-.nav-links {
-  text-decoration: none;
-  list-style-type: none;
-  color: #555;
-  font-family: 'Open Sans';
-  margin: 0 10px;
-}
-
-.nav-links {
-
-}
-
-.social-links{
+.social-links {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -96,4 +79,46 @@ p {
 .social-links .fa {
   margin: 0px 10px;
   color: #ff3264;
+}
+
+/*#main {
+  min-height: 1000px;
+}*/
+
+#main {
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(255,175,135,.5);
+  background-image: url("ocean.jpg");
+  min-height: 100vh;
+  align-items: center;
+}
+#RachelImg {
+  max-height:150px;
+  border-radius: 100px;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 2px;
+}
+
+#about, 
+#about > img,
+#about > div {
+  margin: 10px;
+}
+
+#about-words p:first-child {
+  margin-top: 0;
+}
+
+#technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
