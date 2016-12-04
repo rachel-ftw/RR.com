@@ -12,11 +12,12 @@ class App extends Component {
         <div id="main">
           <div id="about">
             <div>
-              <img id="RachelImg" src="./rachel_ralston.jpg" />
+              <img id="RachelImg" role="presentation" src="./rachel_ralston.jpg" />
               <div className="social-links">
-                <a href="#"><i className="fa fa-lg fa-github" aria-hidden="true"></i></a>
-                <a href="#"><i className="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i className="fa fa-lg fa-dribbble" aria-hidden="true"></i></a>
+                <a href="https://github.com/rachel-ftw"><i className="fa fa-lg fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/rachelralston"><i className="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://dribbble.com/rachelralston"><i className="fa fa-lg fa-dribbble" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/rachelralston"><i className="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>
               </div>
             </div>
             <div id="about-words">

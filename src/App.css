@@ -25,15 +25,13 @@ body {
   flex-direction: column;
 }
 
-
-
 .primary-nav {
   min-height: 30px;
   display: flex;
   flex-direction: row;
   background-color: #4CE0B3;
   padding: 10px 10px 5px 10px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -44,46 +42,11 @@ body {
   font-family: 'Bungee Hairline';
 }
 
-#nav-content{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-p {
-  font-family: 'Open Sans';
-}
-
 #sub-title {
   margin: 0px;
   font-size: 1.2em;
   color: #888;
 }
-
-#nav-link-box {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.social-links {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.social-links .fa {
-  margin: 0px 10px;
-  color: #ff3264;
-}
-
-/*#main {
-  min-height: 1000px;
-}*/
 
 #main {
   display:flex;
@@ -93,6 +56,7 @@ p {
   min-height: 100vh;
   align-items: center;
 }
+
 #RachelImg {
   max-height:150px;
   border-radius: 100px;
@@ -106,11 +70,33 @@ p {
   padding: 20px 40px;
   border-radius: 2px;
 }
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.social-links .fa {
+  margin: 0px 10px;
+  color: #ff3264;
+}
 
 #about, 
 #about > img,
-#about > div {
+#about > div:first-child {
   margin: 10px;
+}
+
+#about > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-words {
+  margin: 10px 10px 10px 30px;
 }
 
 #about-words p:first-child {
