@@ -1,36 +1,23 @@
-@font-face {
-  font-family: 'Bungee Hairline';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Bungee Hairline'), local('BungeeHairline-Regular'), url(https://fonts.gstatic.com/s/bungeehairline/v2/8Li3dr3whdkxuk7pmLaZaZ16wW5UEL6hOOm3lnIQ28I.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  color: #333;
 }
 
 .primary-nav {
   min-height: 30px;
   display: flex;
   flex-direction: row;
-  background-color: #4CE0B3;
-  padding: 10px 10px 5px 10px;
+  background-color: #333;
+  padding: 10px 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -38,32 +25,71 @@ body {
 #rachelRalstonLogo {
   margin: 0;
   padding: 0;
-  font-size: 2em;
-  font-family: 'Bungee Hairline';
+  font-size: 1.5em;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
-#sub-title {
+#nav-link-box .nav-links {
   margin: 0px;
   font-size: 1.2em;
   color: #888;
+  transition: color 0.3s ease;
+  font-weight: 300;
+  text-decoration:none;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+#nav-link-box .nav-links:last-child {
+  padding-right: 0px;
+}
+
+#nav-link-box .nav-links:hover {
+  color: #ccc;
 }
 
 #main {
   display:flex;
   flex-direction: column;
-  background-color: rgba(255,175,135,.5);
-  background-image: url("ocean.jpg");
   min-height: 100vh;
   align-items: center;
+  padding: 10px 30px;
+}
+
+#splash {
+  margin: 10px 0px 50px 0px;
+}
+
+#splash h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: #555;
+}
+
+#splash h1:last-child {
+  font-size: 4em;
+  letter-spacing: -1px;
+  margin-top: 0px;
+  font-weight: 900;
+  color: #333;
+}
+
+#blog {
+  display:flex;
+  flex-direction: row;
+  min-width:100vw;
+}
+#blog:nth-child(2) {
+  background-color: grey
 }
 
 #about {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
-  background-color: #fff;
-  padding: 20px 40px;
-  border-radius: 2px;
 }
 
 #RachelImg {
@@ -72,7 +98,7 @@ body {
 }
 
 #social-links {
-  margin-top: 20px;
+  margin: 0px 0px 30px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -82,6 +108,11 @@ body {
 #social-links .fa {
   margin: 0px 10px;
   color: #ff3264;
+  transition: color 0.3s ease;
+}
+
+#social-links .fa:hover {
+  color: #c6274e;
 }
 
 #about, 
@@ -97,15 +128,33 @@ body {
 }
 
 #about-words {
-  margin: 10px 10px 10px 30px;
+  margin: 10px 10px 10px 3em;
 }
 
 #about-words p:first-child {
   margin-top: 0;
 }
 
+#about-words h3{
+  margin-top:0;
+}
+
 #technologies {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  margin: 10px 10px 10px 3em;
+}
+
+#technologies ul {
+  padding: 0;
+}
+
+#technologies ul li {
+  list-style: none;
+}
+
+#technologies h3{
+  margin-top: 0;
+}
+
+#technologies-content{
+  margin-left: 10px;
 }

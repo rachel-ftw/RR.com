@@ -18,7 +18,7 @@ class App extends Component {
             <div id="nav-link-box">
               <a className="nav-links" href="#">about</a>
               <a className="nav-links" href="#">portfolio</a>
-              <a className="nav-links" href="#">writing</a>
+              <a className="nav-links" href="#">blog</a>
             </div>
           </div>
         </div>
