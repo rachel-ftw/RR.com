@@ -4,3 +4,7 @@
   padding: 10px 5px;
   border-radius: 2px;
 }
+
+.project-img {
+  max-width: 100px;
+}

@@ -1,42 +1,41 @@
 import React, { Component } from 'react'
 import './PortfolioCard.css'
-import blogData from './blog_data'
+import ReactModal from 'react-modal'
 
-
-
-const ListItem = (props) => <li>{ props.text }</li>
-
-const List = (props) => {
-    const listNodes = props.data.map((
-    value,index) => {
-        return(
-            <ListItem text={value} key={index}></ListItem>
-        )
-    })
-
-    return ( <ul>{listNodes}</ul>
-    )
-}
-
-
-class PortfolioCard extends Component {
-  constructor(props, context) {
-    super(props, context)
-    this.state = {blogs: blogData}
+export default class PortfolioCard extends Component {
+  constructor () {
+    super();
+    this.state = {
+      showModal: false
+    };
+    
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
+  
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
   }
 
   render() {
-    let blogPosts = this.state.blogs
-    return <div>blog post here</div>
-    // return {blogPosts.map( blog => <PortfolioCard blog={blog} />)}
+    const project = this.props.project
+    return (
+      <div className="portfolio-card">
+        <button onClick={this.handleOpenModal}>Trigger Modal</button>
+        <ReactModal 
+           isOpen={this.state.showModal}
+           contentLabel="Minimal Modal Example">
+          <button onClick={this.handleCloseModal}>Close Modal</button>
+        </ReactModal>
+        <img className="project-img" src={'./uma.jpg'} />
+        <h2>{project.title}</h2>
+        <p>{project.summary}</p>
+        <p></p>
+      </div>
+    )
   }
 }
-
-// const PortfolioCard = props => {
-//   return <div key=`{props.blog.id}` className="portfolio-card">
-//     <h3>{props.blog.title}</h3>
-//     <p>{props.blog.content}</p> 
-//   </div>
-// }
-
-export default PortfolioCard

@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import './App.css'
 import PortfolioCard from './PortfolioCard.js'
+import projectData from './project_data'
 
 class App extends Component {
+    
   render() {
+    const projects = projectData
+    console.log(projects)
+    const projectComponents = projects.map(project => 
+      <PortfolioCard key={project.id} project={project} />)
+
     return (
       <div className="content">
         <div className="primary-nav">
           <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
           <div id="nav-link-box">
-            <a className="nav-links" href="#">blog</a>
+            <a className="nav-links" href="#">projects</a>
             <a className="nav-links" href="#">portfolio</a>
             <a className="nav-links" href="#">about</a>
           </div>
@@ -19,16 +26,8 @@ class App extends Component {
             <h1>Investigating the intersection of</h1>
             <h1>development, design & psychology</h1>
           </div>
-          <div id="blog">
-            <PortfolioCard />
-            <PortfolioCard />
-            <PortfolioCard />
-            <PortfolioCard />
-            <PortfolioCard />
-            
-          </div>
-          <div id="portfolio">
-          </div>
+          <div id="project">{projectComponents}</div>
+          <div id="portfolio"></div>
           <div id="about">
             <div>
               <img id="RachelImg" role="presentation" src="./rachel_ralston.jpg" />
