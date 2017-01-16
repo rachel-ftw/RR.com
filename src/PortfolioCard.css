@@ -1,10 +1,10 @@
 .portfolio-card {
-  min-width: 25%;
-  min-height: 50vh;
+  min-width: 20%;
   padding: 10px 5px;
   border-radius: 2px;
+  border: 1px solid blue;
 }
 
 .project-img {
-  max-width: 100px;
+  max-width: 200px;
 }

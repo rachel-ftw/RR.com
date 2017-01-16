@@ -23,18 +23,18 @@ export default class PortfolioCard extends Component {
 
   render() {
     const project = this.props.project
+    
     return (
-      <div className="portfolio-card">
-        <button onClick={this.handleOpenModal}>Trigger Modal</button>
+      <div className="portfolio-card" onClick={this.handleOpenModal}>
         <ReactModal 
            isOpen={this.state.showModal}
-           contentLabel="Minimal Modal Example">
+           contentLabel={project.title}>
+           <h3>{project.title}</h3>
+           <p>{project.summary}</p>
           <button onClick={this.handleCloseModal}>Close Modal</button>
         </ReactModal>
-        <img className="project-img" src={'./uma.jpg'} />
+        <img className="project-img" src={project.img_url} role="presentation" />
         <h2>{project.title}</h2>
-        <p>{project.summary}</p>
-        <p></p>
       </div>
     )
   }
