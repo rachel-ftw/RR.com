@@ -2,6 +2,7 @@ let projectData = [
   {
     id:1,
     type: "project",
+    technologies: "",
     github_url: "https://github.com/rachel-ftw/goalie-local.git",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
@@ -11,6 +12,7 @@ let projectData = [
   {
     id:2,
     type: "project",
+    technologies: "Pug, Yarn, Node, JS, CSS, Mocha/Chai/Sinon/Istanbul, Sequelize, Express",
     github_url: "https://github.com/GuildCrafts/floworky",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
@@ -20,6 +22,7 @@ let projectData = [
   {
     id:3,
     type: "project",
+    technologies: "Webpack, Babel, ESLint, Sass, Knex",
     github_url: "https://github.com/rachel-ftw/Trossello",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
@@ -28,7 +31,8 @@ let projectData = [
   },
   {
     id:4,
-    type: "project",
+    type: "Coding",
+    technologies: "React, Material UI, Google API, Mocha/Chai, Postgres, Babel, Webpack",
     github_url: "https://github.com/rachel-ftw/coach-que-local",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
@@ -38,6 +42,7 @@ let projectData = [
   {
     id:5,
     type: "project",
+    technologies: "",
     github_url: "https://github.com/GuildCrafts/prrr",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
@@ -47,15 +52,17 @@ let projectData = [
   {
     id:6,
     type: "project",
+    technologies: "Webpack, React/Redux, Moment, Enzyme, eslint",
     github_url: "#",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
-    title: "I'm a title 6 Video",
-    short_summary: "A summary 140char"
+    title: "DragonBoard",
+    short_summary: "An open source business metric dashboard."
   },
   {
     id:7,
     type: "project",
+    technologies: "",
     github_url: "#",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
