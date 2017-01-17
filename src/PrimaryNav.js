@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './PrimaryNav.css'
-import ReactModal from 'react-modal'
+import {Sticky} from 'react-sticky'
 
-export default class PortfolioCard extends Component {
+export default class PrimaryNav extends Component {
 
   render() {
     return (
