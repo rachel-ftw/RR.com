@@ -3,6 +3,7 @@ import './App.css'
 import PortfolioCard from './PortfolioCard'
 import projectData from './project_data'
 import Footer from './Footer'
+import PrimaryNav from './PrimaryNav'
 import {StickyContainer, Sticky} from 'react-sticky'
 
 class App extends Component {
@@ -16,35 +17,14 @@ class App extends Component {
     return (
       <div className="content">
       <StickyContainer>
-        <Sticky>
-          <div className="primary-nav">
-            <div id="nav-link-box">
-              <a className="nav-links" href="#">projects</a>
-              <a className="nav-links" href="#">portfolio</a>
-              <a className="nav-links" href="#">about</a>
-            </div>
-            <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
-            <div id="social-links">
-              <a href="mailto:rachel@rachelralston.com"><i className="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
-              <a href="https://github.com/rachel-ftw"><i className="fa fa-lg fa-github" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/rachelralston"><i className="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://dribbble.com/rachelralston"><i className="fa fa-lg fa-dribbble" aria-hidden="true"></i></a>
-              <a href="https://linkedin.com/in/rachelralston"><i className="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </Sticky>
+        <PrimaryNav />
         <div id="main">
           <div id="about">
             <div className="splash">
               <div className="grey-background">
                 <h1>design & code</h1>
                 <div className="about-words">
-                  <p>Oakland based designer & full stack developer. I can handle whatever you
-                  can throw at me. I've developed & maintained full stack apps, 
-                  designed brand marketing strategies & materials, & illustrated 
-                  magazine covers.</p>
-                  <p>Non-tech loves include rock climbing, dancing, hiking with
-                  <a href={'./uma.jpg'}> this lady</a>, meditation and yoga.</p>
+                  <p>Oakland based designer & full stack developer. </p>
                 </div>
                 <div className="cta">
                   <a href="#" className="cta-button">check out my work</a>

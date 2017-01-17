@@ -30,10 +30,10 @@ export default class PortfolioCard extends Component {
            isOpen={this.state.showModal}
            contentLabel={project.title}>
            <h3>{project.title}</h3>
-           <p>{project.summary}</p>
+           <p>{project.short_summary}</p>
           <button onClick={this.handleCloseModal}>Close Modal</button>
         </ReactModal>
-        <img className="project-img" src={project.img_url} role="presentation" />
+        <img className="project-img" src={project.featured_img} role="presentation" />
         <h2>{project.title}</h2>
       </div>
     )

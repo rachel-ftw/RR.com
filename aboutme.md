@@ -2,6 +2,13 @@ I'm a software engineer living in Oakland CA.  My early career focused on market
 
 I love software engineering because lets me solve interesting problems and make useful things. I'm delighted that I found things that address everything I'm good at, from working with people to problem solving to creative thinking. 
 
+I can handle whatever you
+                  can throw at me. I've developed & maintained full stack apps, 
+                  designed brand marketing strategies & materials, & illustrated 
+                  magazine covers.</p>
+                  <p>Non-tech loves include rock climbing, dancing, hiking with
+                  <a href={'./uma.jpg'}> this lady</a>, meditation and yoga.</p>
+
 ###Technologies
 HTML
 CSS
