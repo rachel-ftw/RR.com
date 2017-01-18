@@ -9,6 +9,7 @@
   margin: 10px;
   transform: scale(.9);
   transition: all 0.3s ease-in-out;
+  z-index: -1;
 }
 
 .portfolio-card:hover {

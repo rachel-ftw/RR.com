@@ -8,7 +8,15 @@ export default class Footer extends Component {
     
     return (
       <div className="footer">
-        hi I'm a footer
+        <div className="3-col">
+          hi I'm a footer
+        </div>
+        <div className="3-col">
+          hi I'm a footer
+        </div>
+        <div className="3-col">
+          hi I'm a footer
+        </div>
       </div>
     )
   }
