@@ -2,7 +2,7 @@ let projectData = [
   {
     id:1,
     type: "project",
-    technologies: "",
+    technologies: "Circle CI",
     github_url: "https://github.com/rachel-ftw/goalie-local.git",
     featured_img: './uma.jpg',
     slideshow_imgs: {},
