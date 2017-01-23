@@ -1,3 +1,4 @@
 node_modules
 portfolio-clones
 .env
+.DS_Store
