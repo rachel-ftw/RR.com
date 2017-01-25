@@ -1,0 +1,161 @@
+/*****************************************************
+General Set Up
+*****************************************************/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+#main {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+#project {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 95vw;
+  max-width: 95vw;
+  padding: 50px 0px;
+}
+
+
+/*****************************************************
+Primary Top Nav
+*****************************************************/
+.primary-nav {
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  padding: 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rachelRalstonLogo {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+#nav-link-box .nav-links {
+  margin: 0px;
+  font-size: 1.2em;
+  color: #888;
+  transition: color 0.3s ease;
+  font-weight: 300;
+  text-decoration:none;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+#nav-link-box .nav-links:last-child {
+  padding-right: 0px;
+}
+
+#nav-link-box .nav-links:hover {
+  color: #ccc;
+}
+
+#social-links {
+  margin: 0px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social-links .fa {
+  margin: 0px 10px;
+  color: #4BFFBA;
+  transition: color 0.3s ease;
+}
+
+#social-links .fa:hover {
+  color: #c6274e;
+}
+
+/*****************************************************
+Splash
+*****************************************************/
+.splash{
+  background-image: url("./public/ocean.jpg");
+  min-height: 50vh;
+  min-width: 100vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-words p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.grey-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  background-color: rgba(51,51,51,.5);
+  border-radius: 2px;
+}
+
+.splash h1 {
+  color: #4BFFBA;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 20px 70px 20px;
+  width: 100%;
+  min-height: 100px;
+}
+
+.cta-button {
+  padding: 20px 40px;
+  margin: 20px;
+  font-size: 2em;
+  color: #888;
+  font-weight: 300;
+  border-radius: 3px;
+  background-color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+  color: #ccc;
+}
