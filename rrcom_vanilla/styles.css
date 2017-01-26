@@ -57,24 +57,6 @@ Primary Top Nav
   font-weight: 500;
 }
 
-#nav-link-box .nav-links {
-  margin: 0px;
-  font-size: 1.2em;
-  color: #888;
-  transition: color 0.3s ease-in-out;
-  font-weight: 300;
-  text-decoration:none;
-  padding-right: 20px;
-  text-transform: uppercase;
-}
-
-#nav-link-box .nav-links:last-child {
-  padding-right: 0px;
-}
-
-#nav-link-box .nav-links:hover {
-  color: #ccc;
-}
 
 /*****************************************************
 Splash
