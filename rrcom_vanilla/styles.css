@@ -61,7 +61,7 @@ Primary Top Nav
   margin: 0px;
   font-size: 1.2em;
   color: #888;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
   font-weight: 300;
   text-decoration:none;
   padding-right: 20px;
@@ -116,3 +116,44 @@ Splash
   font-family: 'Abril Fatface', cursive;
   margin: 0px;
 }
+
+/*****************************************************
+ABOUT RACHEL
+*****************************************************/
+.about {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-child {
+  margin: 20px;
+}
+
+.about img {
+  max-height: 120px;
+  border-radius: 60px;
+}
+
+.social-links {
+  margin: 0px 0px 30px 0px;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links .fa {
+  margin: 5px 10px;
+  color: #4BFFBA;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links .fa:hover {
+  color: #1c8c61;
+}
+
