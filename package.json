@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "webpack -p --env.prod", 
-    "dev": "webpack-dev-server --env.dev",
+    "dev": "webpack-dev-server --env.dev --port 8081",
     "start:dev": "webpack --watch --env.dev",
     "validate": "npm run lint",
     "start": "http-server --silent -c-1",
