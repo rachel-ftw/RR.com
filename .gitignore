@@ -2,6 +2,4 @@ node_modules
 portfolio-clones
 .DS_Store
 bulid
-coverage/
 dist
-.opt-in
