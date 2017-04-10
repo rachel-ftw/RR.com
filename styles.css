@@ -78,20 +78,23 @@ Splash
   margin: 2em;
 }
 
-.grey-background {
+.splash-grey-background {
+  background-color: rgba(0, 0, 0, .5);
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
-.grey-background p {
+.splash-grey-background p {
   color: #fff;
   font-weight: 300;
   font-size: 1.5em;
 }
 
-.grey-background h1 {
+.splash-grey-background h1 {
   color: #4BFFBA;
   font-size: 4em;
   text-transform: uppercase;
@@ -103,17 +106,20 @@ Splash
 ABOUT RACHEL
 *****************************************************/
 .about {
+  background-color: #fff;
+  z-index: 2;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: center;
   align-items: center;
   justify-content: center;
-  max-width: 900px;
-  margin: auto;
 }
 
 .about-child {
-  margin: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .about img {
@@ -121,12 +127,28 @@ ABOUT RACHEL
   border-radius: 60px;
 }
 
+.test {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.test.fade-in {
+  opacity: 1;
+}
+
+/*****************************************************
+Footer
+*****************************************************/
+
 .social-links {
-  margin: 0px 0px 30px 0px;
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  justify-content: space-between;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 20px 0px;
+  /*justify-content: space-between;*/
   align-items: center;
+  justify-content: center;
 }
 
 .social-links .fa {
@@ -138,4 +160,3 @@ ABOUT RACHEL
 .social-links .fa:hover {
   color: #1c8c61;
 }
-

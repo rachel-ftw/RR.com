@@ -10,38 +10,73 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="hi">
-      <section class="primary-nav">
-        <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
-      </section>
-      <section>
-        <div class="splash">
-          <img src="./public/amanda_knox.png">
-          <div class="grey-background">
-            <h1>code & design</h1>
-            <p>Oakland based full stack developer & designer. </p>
-          </div>
-        </div>
-      </section>
-      <section class="about">
+    <section class="primary-nav">
+      <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
+    </section>
+    <section id="splash" class="splash">
+      <div class="splash-grey-background">
+        <img src="./public/amanda_knox.png">
+        <h1>rachel ralston</h1>
+        <p>full stack developer & designer. </p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div id="about1" class="test">
         <img class="about-child" src="./public/rachel_ralston.jpg">
         <div class="about-child">
           <h3>Hi. I'm Rachel.</h3>
-
           <p>I'm a full stack developer, designer, & writer living in Oakland, CA. I have experience in the full software development lifecycle – from concept through delivery of customizable solutions & next-generation web applications with the MERN stack. With a passion for research, design, and implementation of scalable applications, I appreciate the experimental process of writing maintainable and extensible code in a team environment. </p>
           <p>Interested in working together? Take a look at <a href="https://drive.google.com/open?id=0B4m5fYxrXaGgVjB2Q1k2bi1DeWc">my resume</a> and shoot me an <a href="mailto:rachel@rachelralston.com">email</a>.
         </div>
-        <div class="social-links about-child">
-          <a href="https://github.com/rachel-ftw" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/rachelralston" target="_blank"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://linkedin.com/in/rachelralston" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
-          <a href="https://dribbble.com/rachelralston" target="_blank"><i class="fa fa-2x fa-dribbble" aria-hidden="true"></i></a>
-          <a href="https://medium.com/@rachelralston" target="_blank"><i class="fa fa-2x fa-medium" aria-hidden="true"></i></a>
+      </div>
+
+      <div id="about2" class="test">
+        <img class="about-child" src="./public/rachel_ralston.jpg">
+        <div class="about-child">
+          <h3>Hi. I'm Rachel.</h3>
+          <p>I'm a full stack developer, designer, & writer living in Oakland, CA. I have experience in the full software development lifecycle – from concept through delivery of customizable solutions & next-generation web applications with the MERN stack. With a passion for research, design, and implementation of scalable applications, I appreciate the experimental process of writing maintainable and extensible code in a team environment. </p>
+          <p>Interested in working together? Take a look at <a href="https://drive.google.com/open?id=0B4m5fYxrXaGgVjB2Q1k2bi1DeWc">my resume</a> and shoot me an <a href="mailto:rachel@rachelralston.com">email</a>.
         </div>
-      </section>
-      <section class="portfolio">
-      </section>
-    </div>
+      </div>
+
+      <div id="about3" class="test">
+        <img class="about-child" src="./public/rachel_ralston.jpg">
+        <div class="about-child">
+          <h3>Hi. I'm Rachel.</h3>
+          <p>I'm a full stack developer, designer, & writer living in Oakland, CA. I have experience in the full software development lifecycle – from concept through delivery of customizable solutions & next-generation web applications with the MERN stack. With a passion for research, design, and implementation of scalable applications, I appreciate the experimental process of writing maintainable and extensible code in a team environment. </p>
+          <p>Interested in working together? Take a look at <a href="https://drive.google.com/open?id=0B4m5fYxrXaGgVjB2Q1k2bi1DeWc">my resume</a> and shoot me an <a href="mailto:rachel@rachelralston.com">email</a>.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/rachel-ftw" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/rachelralston" target="_blank"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/in/rachelralston" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://dribbble.com/rachelralston" target="_blank"><i class="fa fa-2x fa-dribbble" aria-hidden="true"></i></a>
+        <a href="https://medium.com/@rachelralston" target="_blank"><i class="fa fa-2x fa-medium" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="/js/main.js" ></script>
     <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+    <script>
+    $(function() {
+      var controller = new ScrollMagic.Controller();
+      var scene = new ScrollMagic.Scene({
+          triggerElement: '#about1',
+        })
+        .setClassToggle("#about1", 'fade-in')
+        .addIndicators()
+        .addTo(controller);
+    })
+    // duration: 400,    // the scene should last for a scroll distance of 100px
+    // offset: 50        // start this scene after scrolling for 50px
+
+    </script>
   </body>
 </html>
