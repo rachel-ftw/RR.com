@@ -7,8 +7,8 @@ export default class About extends Component {
   render() {
     return (
       <div>
-      <div className="col-2"></div>
-      <div className="col-2"></div>
+        <div className="col-2"></div>
+        <div className="col-2"></div>
       </div>
     )
   }

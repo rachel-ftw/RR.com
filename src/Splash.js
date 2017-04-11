@@ -2,15 +2,12 @@ import React, { Component } from 'react'
 import './Splash.css'
 
 export default class Splash extends Component {
-
   render() {
     return (
-      <div id="about">
-        <div className="splash">
-          <div className="grey-background">
-            <h1>RACHEL RALSTON</h1>
-            <p className="about-words">full stack developer & designer.</p>
-          </div>
+      <div className="splash">
+        <div className="splash-grey-background">
+          <h1 className="splash-heading">RACHEL RALSTON</h1>
+          <p className="splash-sub-heading">full stack developer & designer.</p>
         </div>
       </div>
     )

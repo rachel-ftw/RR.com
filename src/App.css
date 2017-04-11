@@ -28,4 +28,12 @@ body {
   min-width: 95vw;
   max-width: 95vw;
   padding: 50px 0px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+#project.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }

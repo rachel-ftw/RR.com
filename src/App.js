@@ -7,14 +7,24 @@ import About from './About'
 import Splash from './Splash'
 import PortfolioCard from './PortfolioCard'
 import Footer from './Footer'
+import * as ScrollMagic from 'scrollmagic'
 
 class App extends Component {
 
   render() {
     const projects = projectData
-    console.log(projects)
     const projectComponents = projects.map(project =>
       <PortfolioCard key={project.id} project={project} />)
+
+
+    var controller = new ScrollMagic.Controller()
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#project',
+      })
+      .setClassToggle('#project', 'fade-in')
+      .addIndicators()
+      .addTo(controller)
 
     return (
       <div className="content">
@@ -27,6 +37,9 @@ class App extends Component {
           </div>
           <Footer/>
         </StickyContainer>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script src="./scrollMagic.js"></script>
       </div>
     )
   }

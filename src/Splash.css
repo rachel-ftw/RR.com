@@ -4,41 +4,36 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 100vh;
   min-width: 100vw;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-#about {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-words {
-  color: #fff;
-  font-weight: 300;
-  font-size: 1.5em;
-}
-
-.grey-background {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+
+.splash-grey-background {
   background-color: rgba(51,51,51,.5);
-  border-radius: 2px;
-  min-width: 100%;
-  min-height: 80vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.splash h1 {
+.splash-grey-background h1 {
   color: #4BFFBA;
   font-size: 4em;
   text-transform: uppercase;
   font-family: 'Abril Fatface', cursive;
   margin-bottom: 0;
   letter-spacing: 4px;
+}
+
+.splash-sub-heading {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5em;
 }

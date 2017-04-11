@@ -6,6 +6,8 @@
   padding: 10px 30px;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+  display: none;
 }
 
 #rachelRalstonLogo {
@@ -20,7 +22,7 @@
 
 #nav-link-box .nav-links {
   margin: 0px;
-  font-size: 1.2em;
+  font-size: .9em;
   color: #888;
   transition: color 0.3s ease;
   font-weight: 300;
@@ -35,22 +37,4 @@
 
 #nav-link-box .nav-links:hover {
   color: #ccc;
-}
-
-#social-links {
-  margin: 0px 0px 30px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#social-links .fa {
-  margin: 0px 10px;
-  color: #4BFFBA;
-  transition: color 0.3s ease;
-}
-
-#social-links .fa:hover {
-  color: #08c77e;
 }
