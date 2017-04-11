@@ -3,6 +3,7 @@ import {StickyContainer} from 'react-sticky'
 import './App.css'
 import projectData from './project_data'
 import PrimaryNav from './PrimaryNav'
+import About from './About'
 import Splash from './Splash'
 import PortfolioCard from './PortfolioCard'
 import Footer from './Footer'
@@ -21,6 +22,7 @@ class App extends Component {
           <PrimaryNav />
           <div id="main">
             <Splash />
+            <About />
             <div id="project">{projectComponents}</div>
           </div>
           <Footer/>

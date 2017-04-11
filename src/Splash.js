@@ -9,9 +9,7 @@ export default class Splash extends Component {
         <div className="splash">
           <div className="grey-background">
             <h1>RACHEL RALSTON</h1>
-            <div className="about-words">
-              <p>full stack developer & designer.</p>
-            </div>
+            <p className="about-words">full stack developer & designer.</p>
           </div>
         </div>
       </div>
