@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <title>Rachel Ralston Full Stack Development</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Abril+Fatface">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
+
   <body>
     <section class="primary-nav">
-      <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
+      <h1 id="rachelRalstonLogo">
+        <a href="index.html">RACHEL RALSTON</a>
+      </h1>
     </section>
+
     <section id="splash" class="splash">
       <div class="splash-grey-background">
         <img src="./public/amanda_knox.png">
         <h1>rachel ralston</h1>
-        <p>full stack developer & designer. </p>
+        <p>full stack developer & designer</p>
       </div>
     </section>
 
@@ -69,9 +73,16 @@
       var controller = new ScrollMagic.Controller();
       var scene = new ScrollMagic.Scene({
           triggerElement: '#about1',
+          duration: '80%',
+          triggerHook: .9 ,
         })
         .setClassToggle("#about1", 'fade-in')
-        .addIndicators()
+        .addIndicators({
+          name: 'about fade',
+          colorTrigger: 'black',
+          colorStart: '#75c695',
+          colorEnd: 'pink'
+        })
         .addTo(controller);
     })
     // duration: 400,    // the scene should last for a scroll distance of 100px
