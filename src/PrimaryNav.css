@@ -13,7 +13,8 @@
   padding: 0;
   font-size: 1.5em;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 4px;
   font-weight: 500;
 }
 
@@ -23,7 +24,7 @@
   color: #888;
   transition: color 0.3s ease;
   font-weight: 300;
-  text-decoration:none;
+  text-decoration: none;
   padding-right: 20px;
   text-transform: uppercase;
 }
@@ -51,5 +52,5 @@
 }
 
 #social-links .fa:hover {
-  color: #c6274e;
+  color: #08c77e;
 }

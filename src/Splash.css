@@ -1,6 +1,10 @@
 .splash{
-  background-image: url("../public/ocean.jpg");
-  min-height: 50vh;
+  background-image: url("../public/water_background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
   min-width: 100vw;
   display:flex;
   flex-direction: column;
@@ -23,9 +27,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   background-color: rgba(51,51,51,.5);
   border-radius: 2px;
+  min-width: 100%;
+  min-height: 80vh;
 }
 
 .splash h1 {
@@ -33,32 +39,6 @@
   font-size: 4em;
   text-transform: uppercase;
   font-family: 'Abril Fatface', cursive;
-}
-
-.cta {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 20px 70px 20px;
-  /*background-color: #333;*/
-  width: 100%;
-  min-height: 100px;
-}
-
-.cta-button {
-  padding: 20px 40px;
-  margin: 20px;
-  font-size: 2em;
-  color: #888;
-  font-weight: 300;
-  border-radius: 3px;
-  background-color: #333;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #555;
-  color: #ccc;
+  margin-bottom: 0;
+  letter-spacing: 4px;
 }

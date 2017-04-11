@@ -8,12 +8,14 @@ export default class PrimaryNav extends Component {
     return (
       <Sticky>
         <div className="primary-nav">
+          <div>
+            <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
+          </div>
           <div id="nav-link-box">
             <a className="nav-links" href="#">projects</a>
             <a className="nav-links" href="#">portfolio</a>
             <a className="nav-links" href="#">about</a>
           </div>
-          <h1 id="rachelRalstonLogo">RACHEL RALSTON</h1>
           <div id="social-links">
             <a href="mailto:rachel@rachelralston.com"><i className="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
             <a href="https://github.com/rachel-ftw"><i className="fa fa-lg fa-github" aria-hidden="true"></i></a>
