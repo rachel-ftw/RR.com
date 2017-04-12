@@ -1,8 +1,6 @@
 /*****************************************************
 General Set Up
 *****************************************************/
-/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900');*/
-
 body {
   margin: 0;
   padding: 0;
@@ -40,6 +38,7 @@ h1 {
 }
 
 
+
 /*****************************************************
 Primary Top Nav
 *****************************************************/
@@ -50,13 +49,14 @@ Primary Top Nav
   padding: 10px 30px;
   min-height: 30px;
   min-width: 100vw;
+  position: fixed;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
-  position: fixed;
+  font-family: 'Oswald', sans-serif;
   transition: all .1s ease-in;
 }
+
 .primary-nav.show {
   opacity: 1;
   justify-content: center;
@@ -71,29 +71,29 @@ Primary Top Nav
   margin: 0;
   padding: 0;
   font-size: 1.5em;
-
 }
 
 #rachelRalstonLogo a {
   text-decoration: none;
   color: #fff;
-  transition: all .3s ease-in-out;
   letter-spacing: 2px;
+  transition: all .3s ease-in-out;
 }
 
 #rachelRalstonLogo a:hover {
   color: #4BFFBA;
 }
 
+
+
 /*****************************************************
 Splash
 *****************************************************/
-
 .splash {
   background-image: url("./public/ocean.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  min-height: 50vh;
+  min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: row;
@@ -101,8 +101,8 @@ Splash
   justify-content: center;
 }
 
-.splash img {
-  margin: 2em;
+.scrollmagic-pin-spacer {
+  height: 0 !important;
 }
 
 .splash-grey-background {
@@ -113,6 +113,7 @@ Splash
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 .splash-grey-background p {
@@ -130,13 +131,44 @@ Splash
   margin: 0px;
 }
 
+
+
 /*****************************************************
-ABOUT RACHEL
+HANDS
+*****************************************************/
+.hands {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#hands1 {
+  display: flex;
+  flex-direction: row;
+}
+.about-hands {
+  min-width: 50vw;
+  font-family: 'Oswald', sans-serif;
+}
+.about-hands h2 {
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+
+/*****************************************************
+ABOUT
 *****************************************************/
 .about {
   background-color: #fff;
   z-index: 2;
-  max-width: 900px;
+  min-width: 100vw;
   min-height: 100vh;
   margin: auto;
   display: flex;
@@ -144,13 +176,14 @@ ABOUT RACHEL
   align-self: center;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .about-child {
   margin: 0 20px 20px 20px;
 }
 
-.about img {
+.about-child img {
   max-height: 120px;
   border-radius: 60px;
 }
@@ -162,26 +195,37 @@ ABOUT RACHEL
   align-items: center;
   transform: translateY(5px);
   transition: all 1s ease-out;
+  padding: 20px 0;
+  margin: 20px;
 }
-
+.test img {
+  max-width: 100px;
+}
 .test.fade-in {
   transform: translateY(0);
   opacity: 1;
 }
 
+
+
 /*****************************************************
 Footer
 *****************************************************/
+.footer {
+  z-index: 99;
+  position: relative;
 
+}
 .social-links {
   background-color: #333;
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
   padding: 20px 0px;
-  /*justify-content: space-between;*/
   align-items: center;
   justify-content: center;
+  position: relative;
+  min-width: 100vw;
+  z-index: 100;
 }
 
 .social-links .fa {

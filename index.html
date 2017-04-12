@@ -19,30 +19,23 @@
 
     <section id="splash" class="splash">
       <div class="splash-grey-background">
-        <img src="./public/amanda_knox.png">
         <h1>rachel ralston</h1>
         <p>full stack developer & designer</p>
+        <img src="./public/amanda_knox.png">
       </div>
     </section>
 
-    <section class="about">
-      <div id="about1" class="test">
-        <img class="about-child" src="./public/rachel_ralston.jpg">
-        <div class="about-child">
-          <h3>Hi. I'm Rachel.</h3>
-          <p>I'm a full stack developer, designer, & writer living in Oakland, CA. I have experience in the full software development lifecycle – from concept through delivery of customizable solutions & next-generation web applications with the MERN stack. With a passion for research, design, and implementation of scalable applications, I appreciate the experimental process of writing maintainable and extensible code in a team environment. </p>
-          <p>Interested in working together? Take a look at <a href="https://drive.google.com/open?id=0B4m5fYxrXaGgVjB2Q1k2bi1DeWc">my resume</a> and shoot me an <a href="mailto:rachel@rachelralston.com">email</a>.
+    <section class="hands">
+      <div id="hands1">
+        <img class="about-hands" src="./public/handsREPLACEME.jpg">
+        <div class="about-hands">
+          <h2>Artist turned entrepreneur.</h2>
+          <h2>Designer turned engineer.</h2>
+          <h2>Aggressive autodidact.</h2>
+          <h2>Seer of big pictures.</h2>
         </div>
       </div>
-
-      <div id="about2" class="test">
-        <img class="about-child" src="./public/rachel_ralston.jpg">
-        <div class="about-child">
-          <h3>Hi. I'm Rachel.</h3>
-          <p>I'm a full stack developer, designer, & writer living in Oakland, CA. I have experience in the full software development lifecycle – from concept through delivery of customizable solutions & next-generation web applications with the MERN stack. With a passion for research, design, and implementation of scalable applications, I appreciate the experimental process of writing maintainable and extensible code in a team environment. </p>
-          <p>Interested in working together? Take a look at <a href="https://drive.google.com/open?id=0B4m5fYxrXaGgVjB2Q1k2bi1DeWc">my resume</a> and shoot me an <a href="mailto:rachel@rachelralston.com">email</a>.
-        </div>
-      </div>
+    <section>
 
       <div id="about3" class="test">
         <img class="about-child" src="./public/rachel_ralston.jpg">
@@ -54,7 +47,7 @@
       </div>
     </section>
 
-    <footer>
+    <div class="footer">
       <div class="social-links">
         <a href="https://github.com/rachel-ftw" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
         <a href="https://twitter.com/rachelralston" target="_blank"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
@@ -62,47 +55,11 @@
         <a href="https://dribbble.com/rachelralston" target="_blank"><i class="fa fa-2x fa-dribbble" aria-hidden="true"></i></a>
         <a href="https://medium.com/@rachelralston" target="_blank"><i class="fa fa-2x fa-medium" aria-hidden="true"></i></a>
       </div>
-    </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="/js/main.js" ></script>
+    <script src="public/js/main.js" ></script>
     <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
-    <script>
-    $(function() {
-      var controller = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({
-          triggerElement: '#about1 img',
-          duration: '80%',
-          triggerHook: .9 ,
-        })
-        .setClassToggle("#about1", 'fade-in')
-        .addIndicators({
-          name: 'about fade',
-          colorTrigger: 'black',
-          colorStart: '#75c695',
-          colorEnd: 'pink'
-        })
-        .addTo(controller);
-
-        new ScrollMagic.Scene({
-          triggerElement: '.about',
-
-          triggerHook: .1,
-        })
-        .setClassToggle(".primary-nav", 'show')
-        .addIndicators({
-          name: 'nav',
-          colorTrigger: 'black',
-          colorStart: '#75c695',
-          colorEnd: 'pink'
-        })
-        .addTo(controller);
-    })
-
-    // duration: 400,    // the scene should last for a scroll distance of 100px
-    // offset: 50        // start this scene after scrolling for 50px
-
-    </script>
   </body>
 </html>

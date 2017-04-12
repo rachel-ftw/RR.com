@@ -1,16 +1,35 @@
-$(document).ready(function(){
+$(document).ready(function() {
   var controller = new ScrollMagic.Controller();
+
+  $('.test').each(function(){
+    new ScrollMagic.Scene({
+        triggerElement: this.children[0],
+        triggerHook: .9 ,
+      })
+      .setClassToggle(this, 'fade-in')
+      .addIndicators({
+        name: 'about fade',
+        colorTrigger: 'black',
+        colorStart: '#75c695',
+        colorEnd: 'pink'
+      })
+      .addTo(controller);
+  })
+
   new ScrollMagic.Scene({
-      triggerElement: '#splash', // starting scene, when reaching this element
-      duration: 50,    // the scene should last for a scroll distance of 100px
-      // offset: 50        // start this scene after scrolling for 50px
+      triggerElement: '.hands',
+
+      triggerHook: .1,
     })
-    .setPin("#splash")
+    .setClassToggle(".primary-nav", 'show')
     .addIndicators({
-      name: 'about fade in',
+      name: 'nav',
       colorTrigger: 'black',
       colorStart: '#75c695',
       colorEnd: 'pink'
     })
     .addTo(controller);
 })
+
+// duration: 400,    // the scene should last for a scroll distance of 100px
+// offset: 50        // start this scene after scrolling for 50px
