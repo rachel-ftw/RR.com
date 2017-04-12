@@ -8,7 +8,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Oswald', cursive;
   font-weight: 500;
 }
@@ -90,7 +90,7 @@ Primary Top Nav
 Splash
 *****************************************************/
 .splash {
-  background-image: url("./public/ocean.jpg");
+  background-image: url("./public/img/ocean.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -99,11 +99,7 @@ Splash
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.scrollmagic-pin-spacer {
-  height: 0 !important;
-}
+ }
 
 .splash-grey-background {
   background-color: rgba(0, 0, 0, .5);
@@ -114,6 +110,7 @@ Splash
   align-items: center;
   justify-content: center;
   position: fixed;
+
 }
 
 .splash-grey-background p {
@@ -131,18 +128,21 @@ Splash
   margin: 0px;
 }
 
-
+.splash-grey-background img {
+  max-width: 100px;
+}
 
 /*****************************************************
 HANDS
 *****************************************************/
 .hands {
-  background-color: #fff;
+  background-color: #333;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
-  align-self: center;
+  /*align-self: center;*/
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   position: relative;
 }
 
@@ -150,22 +150,47 @@ HANDS
   display: flex;
   flex-direction: row;
 }
-.about-hands {
-  min-width: 50vw;
-  font-family: 'Oswald', sans-serif;
+
+#hands1 div {
+  background-color: #333;
+  max-height: 50vh;
 }
+
+#hands1 div img {
+  /*max-height: 50vh;*/
+  /*padding: 40px 0;*/
+}
+
 .about-hands h2 {
   padding: 20px;
   margin: 20px;
 }
 
+.about-hands p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  /*margin-top: 50px;*/
+  line-height: 2em;
+}
+
+.about-hands {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  min-width: 37%
+}
+
+.about-hands.dagger {
+  min-width: 26%;
+}
 
 
 
 /*****************************************************
 ABOUT
 *****************************************************/
-.about {
+#about {
   background-color: #fff;
   z-index: 2;
   min-width: 100vw;
@@ -206,6 +231,43 @@ ABOUT
   opacity: 1;
 }
 
+
+
+/*****************************************************
+Writing
+*****************************************************/
+#writing {
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#writing #article-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#article-container {
+  max-width: 90vw;
+}
+
+.article {
+  max-width: 30%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article h3 {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
 
 
 /*****************************************************
