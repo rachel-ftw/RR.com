@@ -143,9 +143,7 @@ HANDS
   min-width: 100vw;
   display: flex;
   flex-direction: row;
-  /*align-self: center;*/
   align-items: center;
-  /*justify-content: center;*/
   position: relative;
 }
 
@@ -153,11 +151,6 @@ HANDS
   display: flex;
   flex-direction: row;
 }
-
-/*#hands1 div {
-  background-color: #333;
-  max-height: 50vh;
-}*/
 
 .about-hands h2 {
   text-transform: uppercase;
@@ -181,7 +174,6 @@ HANDS
   min-width: 50%;
   margin-top: 20px;
   background-color: #333;
-
 }
 
 
@@ -189,7 +181,7 @@ HANDS
 /*****************************************************
 ABOUT
 *****************************************************/
-#about {
+/*#about {
   background-color: #fff;
   z-index: 2;
   min-width: 100vw;
@@ -222,13 +214,15 @@ ABOUT
   padding: 20px 0;
   margin: 20px;
 }
+
 .test img {
   max-width: 100px;
 }
+
 .test.fade-in {
   transform: translateY(0);
   opacity: 1;
-}
+}*/
 
 
 
@@ -244,6 +238,7 @@ Writing
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 100vw;
 }
 
 #writing>h1 {
@@ -269,6 +264,27 @@ Writing
   flex-direction: column;
   border: 1px solid #4BFFBA;
   border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.article:hover {
+  transform: scale(1.02, 1.02);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.article a {
+  text-decoration: none;
+  color: #333;
+  -moz-text-decoration-color: #4BFFBA;
+  text-decoration-color: #4BFFBA;
+}
+
+.article a:hover {
+  color: #333;
+  text-decoration-color: #4BFFBA;
 }
 
 .article h3 {
