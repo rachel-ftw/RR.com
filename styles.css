@@ -132,14 +132,17 @@ Splash
   max-width: 100px;
 }
 
+
+
 /*****************************************************
 HANDS
 *****************************************************/
 .hands {
   background-color: #333;
   min-height: 75vh;
+  min-width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /*align-self: center;*/
   align-items: center;
   /*justify-content: center;*/
@@ -151,26 +154,19 @@ HANDS
   flex-direction: row;
 }
 
-#hands1 div {
+/*#hands1 div {
   background-color: #333;
   max-height: 50vh;
-}
-
-#hands1 div img {
-  /*max-height: 50vh;*/
-  /*padding: 40px 0;*/
-}
+}*/
 
 .about-hands h2 {
-  padding: 20px;
-  margin: 20px;
+  text-transform: uppercase;
 }
 
 .about-hands p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 1.5em;
-  /*margin-top: 50px;*/
   line-height: 2em;
 }
 
@@ -178,11 +174,14 @@ HANDS
   color: #fff;
   font-family: 'Oswald', sans-serif;
   padding: 20px;
-  min-width: 37%
+  min-width: 50%
 }
 
 .about-hands.dagger {
-  min-width: 26%;
+  min-width: 50%;
+  margin-top: 20px;
+  background-color: #333;
+
 }
 
 
@@ -247,6 +246,12 @@ Writing
   align-items: center;
 }
 
+#writing>h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+}
+
 #writing #article-container {
   display: flex;
   flex-direction: row;
@@ -262,12 +267,15 @@ Writing
   padding: 5%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #4BFFBA;
+  border-radius: 3px;
 }
 
 .article h3 {
   font-family: 'Oswald', sans-serif;
   color: black;
 }
+
 
 
 /*****************************************************
