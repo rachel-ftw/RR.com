@@ -1,25 +1,41 @@
 $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
 
-  $('.test').each(function(){
-    new ScrollMagic.Scene({
-        triggerElement: this.children[0],
-        triggerHook: .9 ,
-      })
-      .setClassToggle(this, 'fade-in')
-      .addIndicators({
-        name: 'about fade',
-        colorTrigger: 'black',
-        colorStart: '#75c695',
-        colorEnd: 'pink'
-      })
-      .addTo(controller);
+  var pinSplash = new ScrollMagic.Scene({
+    duration: '29%',
+    triggerElement: '#splash',
+    triggerHook: 0,
   })
+    .setPin('#splash', {
+      pushFollowers: false,
+    })
+    .addIndicators({
+      name: 'splash',
+      colorTrigger: 'black',
+      colorStart: '#75c695',
+      colorEnd: 'pink'
+    })
+    .addTo(controller);
 
-  new ScrollMagic.Scene({
+  var contentOverSplash = new ScrollMagic.Scene({
+    // duration: '30%',
+    triggerElement: '.hands',
+    triggerHook: 0.4,
+  })
+    .setPin('#splash', {
+      pushFollowers: false,
+    })
+    .addIndicators({
+      name: 'splash',
+      colorTrigger: 'black',
+      colorStart: '#75c695',
+      colorEnd: 'pink'
+    })
+    .addTo(controller);
+
+  var showNav = new ScrollMagic.Scene({
       triggerElement: '.hands',
-
-      triggerHook: .1,
+      triggerHook: .07,
     })
     .setClassToggle(".primary-nav", 'show')
     .addIndicators({

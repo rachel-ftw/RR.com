@@ -44,7 +44,7 @@ Primary Top Nav
 *****************************************************/
 .primary-nav {
   background-color: #333;
-  z-index: 10;
+  z-index: 100;
   opacity: 0;
   padding: 10px 30px;
   min-height: 30px;
@@ -95,8 +95,6 @@ Splash
   background-repeat: no-repeat;
   min-height: 100vh;
   min-width: 100vw;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
  }
@@ -109,8 +107,6 @@ Splash
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
-
 }
 
 .splash-grey-background p {
@@ -154,6 +150,8 @@ HANDS
 
 .about-hands h2 {
   text-transform: uppercase;
+  font-size: 3em;
+  margin-bottom: 40px;
 }
 
 .about-hands p {
@@ -172,57 +170,9 @@ HANDS
 
 .about-hands.dagger {
   min-width: 50%;
-  margin-top: 20px;
+  margin: 20px 0;
   background-color: #333;
 }
-
-
-
-/*****************************************************
-ABOUT
-*****************************************************/
-/*#about {
-  background-color: #fff;
-  z-index: 2;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.about-child {
-  margin: 0 20px 20px 20px;
-}
-
-.about-child img {
-  max-height: 120px;
-  border-radius: 60px;
-}
-
-.test {
-  opacity: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
-  padding: 20px 0;
-  margin: 20px;
-}
-
-.test img {
-  max-width: 100px;
-}
-
-.test.fade-in {
-  transform: translateY(0);
-  opacity: 1;
-}*/
 
 
 
@@ -239,12 +189,18 @@ Writing
   justify-content: center;
   align-items: center;
   min-width: 100vw;
+  padding-bottom: 60px;
 }
 
-#writing>h1 {
+#writing > h1 {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 4em;
+  margin-top: 40px;
+}
+
+#writing > p {
+  margin-bottom: 40px;
 }
 
 #writing #article-container {
@@ -300,13 +256,48 @@ Footer
 .footer {
   z-index: 99;
   position: relative;
+  background-image: url("./public/img/ocean.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.grey-background {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 40px 0px;
+  min-width: 100vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grey-background p {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.grey-background p:last-of-type {
+  padding-bottom: 20px;
 
 }
+
+.grey-background > p a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.grey-background > p a {
+  color: #4BFFBA;
+}
+
 .social-links {
-  background-color: #333;
   display: flex;
   flex-direction: row;
-  padding: 20px 0px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -315,9 +306,9 @@ Footer
 }
 
 .social-links .fa {
-  margin: 5px 10px;
+  margin: 0 10px 5px 10px;
   color: #4BFFBA;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-links .fa:hover {
