@@ -147,9 +147,7 @@ HANDS
 }
 
 .about-hands.ship {
-  min-width: 50%;
   margin: 20px 0;
-  background-color: #333;
 }
 
 
@@ -349,8 +347,9 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-device-width: 1800px) {
-  .about-hands.ship img {
-    max-height: 40vh;
+  .about-hands.ship{
+    max-width: 400px;
+    min-width: min-content;
   }
 
 }
