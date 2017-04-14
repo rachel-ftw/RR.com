@@ -9,27 +9,14 @@ $(document).ready(function() {
     .setPin('#splash', {
       pushFollowers: false,
     })
-    .addIndicators({
-      name: 'splash',
-      colorTrigger: 'black',
-      colorStart: '#75c695',
-      colorEnd: 'pink'
-    })
     .addTo(controller);
 
   var contentOverSplash = new ScrollMagic.Scene({
-    // duration: '30%',
     triggerElement: '.hands',
     triggerHook: 0.4,
   })
     .setPin('#splash', {
       pushFollowers: false,
-    })
-    .addIndicators({
-      name: 'splash',
-      colorTrigger: 'black',
-      colorStart: '#75c695',
-      colorEnd: 'pink'
     })
     .addTo(controller);
 
@@ -38,12 +25,6 @@ $(document).ready(function() {
       triggerHook: .07,
     })
     .setClassToggle(".primary-nav", 'show')
-    .addIndicators({
-      name: 'nav',
-      colorTrigger: 'black',
-      colorStart: '#75c695',
-      colorEnd: 'pink'
-    })
     .addTo(controller);
 })
 
