@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 import { StickyContainer } from 'react-sticky'
 
-import {
-  About,
-  Footer,
-  PortfolioCard,
-  PrimaryNav,
-  projectData,
-  Splash,
-} from '../components'
+import projectData from '../components/project_data'
+import PrimaryNav from '../components/PrimaryNav'
+import About from '../components/About'
+import Splash from '../components/Splash'
+import PortfolioCard from '../components/PortfolioCard'
+import Footer from '../components/Footer'
 
 import './App.css'
 
 class App extends Component {
   render() {
-    const projects = projectData
-    const projectComponents = projects.map(project =>
+    const projectComponents = projectData.map(project =>
       <PortfolioCard
         key={project.id}
         project={project}
