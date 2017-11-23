@@ -17,5 +17,4 @@ const PrimaryNav = () => (
   </Sticky>
 )
 
-
 export default PrimaryNav
