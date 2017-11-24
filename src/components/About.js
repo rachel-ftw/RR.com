@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 
 const About = () => (
-  <div className="container">
+  <div className="container flex-column">
     <h1 className="header">Hi, I'm Rachel.</h1>
     <p className="subheader">
       I'm a blockchain developer and designer living in Oakland, CA.

@@ -1,13 +1,6 @@
 import React from 'react'
-import './PrimaryNav.css'
 
-const PrimaryNav = () => (
-  <div style={styles.navContainer}>
-    <div style={styles.rr}>RR</div>
-  </div>
-)
-
-const styles = {
+const style = {
   navContainer: {
     padding: '10px 30px',
     minHeight: '30px',
@@ -23,5 +16,11 @@ const styles = {
     border: 'solid 2px black',
   }
 }
+
+const PrimaryNav = () => (
+  <div style={style.navContainer}>
+    <div style={style.rr}>RR</div>
+  </div>
+)
 
 export default PrimaryNav
