@@ -2,8 +2,8 @@ import React from 'react'
 import './About.css'
 
 const About = () => (
-  <div>
-    <div className="col-2">about col-1</div>
+  <div className="flex">
+    <div className="col-2 background-pic"></div>
     <div className="col-2">about col-2</div>
   </div>
 )
