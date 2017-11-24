@@ -12,6 +12,5 @@ a {
 
 .btn:hover {
   background-color: yellow;
-  transform: scale(1.1);
-  /*border: #555 2px solid;*/
+  transform: scale(1.05);
 }

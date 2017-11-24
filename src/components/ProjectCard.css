@@ -1,0 +1,23 @@
+.project-card {
+  padding: 8px;
+  margin: 5px;
+  border: solid 2px yellow;
+}
+
+.project-img {
+  max-width: 32vw;
+  min-width: 20vw;
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-text-area {
+  padding: 5px 10px;
+}
+
+.project-title {
+  text-align: center; 
+  font-size: 1.5em;
+}
