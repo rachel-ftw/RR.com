@@ -2,7 +2,10 @@ import React from 'react'
 import Button from './Button'
 
 const About = () => (
-  <div className="container flex-column">
+  <div
+    className="container flex-column"
+    style={{paddingBottom: '50px'}}
+  >
     <h1 className="header">Hi, I'm Rachel.</h1>
     <p className="subheader">
       I'm a blockchain developer and designer living in Oakland, CA.
@@ -23,5 +26,7 @@ const About = () => (
     </div>
   </div>
 )
+
+
 
 export default About

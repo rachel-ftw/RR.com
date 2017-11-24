@@ -2,12 +2,12 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import projectData from './project_data'
 
-const style = {
+var style = {
   container: {
     backgroundColor: '#333',
     color: '#fff',
-    paddingTop: '50px',
-    paddingBottom: '50px',
+    paddingTop: '80px',
+    paddingBottom: '100px',
   },
   flex: {
     justifyContent: 'space-around'
@@ -26,12 +26,14 @@ const PersonalProjects = () => {
 
   return (
     <div className="flex-column" style={style.container}>
-      <h1 className="header secondary">Personal Projects</h1>
+      <h1 className="header secondary" style={{paddingBottom: '50px'}}>Personal Projects</h1>
       <div className="flex-row" style={style.flex}>
         {projectCards}
       </div>
     </div>
   )
 }
+
+
 
 export default PersonalProjects
