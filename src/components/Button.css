@@ -1,0 +1,14 @@
+.btn {
+  border: black 2px solid;
+  color: #333;
+  padding: 10px;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: yellow;
+}
