@@ -1,19 +1,11 @@
 import React, { Component } from 'react'
 
-// import projectData from '../components/project_data'
 import PrimaryNav from '../components/PrimaryNav'
 import About from '../components/About'
-// import Splash from '../components/Splash'
-// import PortfolioCard from '../components/PortfolioCard'
-// import Footer from '../components/Footer'
+import PersonalProjects from '../components/PersonalProjects'
+import Spacer from '../components/Spacer'
 
 import './App.css'
-// const projectComponents = projectData.map(project =>
-//   <PortfolioCard
-//     key={project.id}
-//     project={project}
-//   />
-// )
 
 class App extends Component {
   render() {
@@ -21,15 +13,11 @@ class App extends Component {
       <div className="content">
         <PrimaryNav />
         <About />
+        <Spacer height={50} />
+        <PersonalProjects />
       </div>
     )
   }
 }
-// <div id="main">
-// <Splash />
-// <About />
-// <div id="project">{projectComponents}</div>
-// </div>
-// <Footer/>
 
 export default App
