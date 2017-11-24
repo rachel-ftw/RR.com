@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectCard = (props) => {
   return (
     <div>
-      <img src={props.image} alt={props.title}>
+      <img src={props.image} alt={props.title} />
     </div>
   )
 }
