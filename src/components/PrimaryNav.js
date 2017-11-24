@@ -1,9 +1,25 @@
 import React from 'react'
-import './PrimaryNav.css'
+
+const style = {
+  navContainer: {
+    padding: '10px 30px',
+    minHeight: '30px',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  rr : {
+    margin: 0,
+    padding: '6px 0 0 6px',
+    minWidth: '30px',
+    minHeight: '30px',
+    fontFamily: 'Permanent Marker, cursive',
+    border: 'solid 2px black',
+  }
+}
 
 const PrimaryNav = () => (
-  <div className="nav-container">
-    <div className="nav-rr">RR</div>
+  <div style={style.navContainer}>
+    <div style={style.rr}>RR</div>
   </div>
 )
 
