@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 
 import PrimaryNav from '../components/PrimaryNav'
 import About from '../components/About'
-import PersonalProjects from '../components/PersonalProjects'
+import Projects from '../components/Projects'
 import Spacer from '../components/Spacer'
+import Contact from '../components/Contact'
 
 import './App.css'
 
@@ -14,7 +15,8 @@ class App extends Component {
         <PrimaryNav />
         <About />
         <Spacer height={50} />
-        <PersonalProjects />
+        <Projects />
+        <Contact />
       </div>
     )
   }

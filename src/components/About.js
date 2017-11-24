@@ -8,25 +8,34 @@ const About = () => (
   >
     <h1 className="header">Hi, I'm Rachel.</h1>
     <p className="subheader">
-      I'm a blockchain developer and designer living in Oakland, CA.
+      I'm a blockchain developer and designer living in Oakland, CA.<br/>
+      Javascript, React, Redux, Web3, Solidity & Smart contract development
     </p>
-    <div className="flex-row">
+    <div className="flex-column" style={{paddingTop: '30px'}}>
       <Button
-        text={'twitter'}
-        link={'http://www.twitter.com/rachelralston'}
-      />
-      <Button
-        text={'github'}
-        link={'http://www.github.com/rachel-ftw'}
-      />
-      <Button
-        text={'email'}
-        link={'mailto:rachel@blockchaindevelopers.io'}
-      />
+        color={'btn yellow'}
+        text={"YES, I'M AVAILABLE FOR HIRE"}
+        link={'#contact'}
+        />
+      <div className="flex-row">
+        <Button
+          color={'btn white'}
+          text={'twitter'}
+          link={'http://www.twitter.com/rachelralston'}
+          />
+        <Button
+          color={'btn white'}
+          text={'github'}
+          link={'http://www.github.com/rachel-ftw'}
+          />
+        <Button
+          color={'btn white'}
+          text={'email'}
+          link={'mailto:rachel@blockchaindevelopers.io'}
+          />
+      </div>
     </div>
   </div>
 )
-
-
 
 export default About

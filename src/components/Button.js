@@ -4,7 +4,7 @@ import './Button.css'
 const Button = (props) => {
   return (
     <a href={props.link}>
-      <div className="btn">{props.text}</div>
+      <div className={props.color}>{props.text}</div>
     </a>
   )
 }

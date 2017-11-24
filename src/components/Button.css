@@ -11,6 +11,17 @@ a {
 }
 
 .btn:hover {
-  background-color: yellow;
   transform: scale(1.05);
+}
+
+.white:hover {
+  background-color: yellow;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow:hover {
+  background-color: white;
 }

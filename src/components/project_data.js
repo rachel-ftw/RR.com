@@ -4,7 +4,7 @@ let projectData = [
     technologies: "Circle CI",
     github_url: "https://github.com/rachel-ftw/goalie-local.git",
     image: './uma.jpg',
-    title: "GOALIE",
+    title: "LOLCHAIN",
     blurb: "Goalie is an internal project tracking dashboard."
   },
   {

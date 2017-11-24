@@ -14,7 +14,7 @@ var style = {
   }
 }
 
-const PersonalProjects = () => {
+const Projects = () => {
   const projectCards = projectData.map(project =>
     <ProjectCard
       key={project.id}
@@ -36,4 +36,4 @@ const PersonalProjects = () => {
 
 
 
-export default PersonalProjects
+export default Projects
