@@ -14,21 +14,23 @@ class ContactForm extends Component {
   }
 
   handleChange(event) {
-    const name = event.target.name
-    this.setState({ [name]: event.target.value })
-    console.log(this.state)
+    const target = event.target
+    const name = target.name
+    this.setState({ [name]: target.value })
   }
 
   handleSubmit(event) {
     event.preventDefault()
     console.log('do something with your form data')
-    console.log(this.state)
   }
 
   render() {
     return (
-      <form action="https://formspree.io/rachel@rachelralston.com"
-      method="POST" encType="multipart/form-data">
+      <form
+        action="https://formspree.io/rachel@rachelralston.com"
+        method="POST"
+        encType="multipart/form-data"
+      >
         <input
           className="contact-input-text"
           type="text"

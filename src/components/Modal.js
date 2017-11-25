@@ -22,7 +22,7 @@ const modalStyle = {
 };
 
 const Modal = (props) => {
-  if(!props.show){
+  if(!props.show) {
     return null;
   }
 

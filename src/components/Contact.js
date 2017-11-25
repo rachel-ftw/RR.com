@@ -25,7 +25,7 @@ class Contact extends Component {
           <h1 className="header secondary">Want to work together?</h1>
           <p>I&#39;m currently accepting new projects and would love to hear about yours.</p>
           <p>Please take a few minutes to tell me about it.</p>
-          <div className='btn yellow' onClick={this.toggleModal}>GET STARTED</div>
+          <div className='btn white' onClick={this.toggleModal}>GET STARTED</div>
         </div>
         <Modal
           show={this.state.modalIsOpen}
