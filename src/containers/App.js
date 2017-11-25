@@ -9,6 +9,19 @@ import Contact from '../components/Contact'
 import './App.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      modalIsOpen: false
+    }
+  }
+
+  toggleModal = () => {
+    this.setState({
+      isOpen: !this.state.modalIsOpen
+    })
+  }
+
   render() {
     return (
       <div className="content">
@@ -16,7 +29,7 @@ class App extends Component {
         <About />
         <Spacer height={50} />
         <Projects />
-        <Contact />
+        <Contact modalIsOpen={this.state.modalIsOpen}/>
       </div>
     )
   }

@@ -26,14 +26,14 @@ const Projects = () => {
 
   return (
     <div className="flex-column" style={style.container}>
-      <h1 className="header secondary" style={{paddingBottom: '50px'}}>Personal Projects</h1>
+      <h1 className="header secondary" style={{paddingBottom: '50px'}}>
+        Projects
+      </h1>
       <div className="flex-row" style={style.flex}>
         {projectCards}
       </div>
     </div>
   )
 }
-
-
 
 export default Projects
