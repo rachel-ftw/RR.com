@@ -30,21 +30,25 @@ class ContactForm extends Component {
       <form action="https://formspree.io/rachel@rachelralston.com"
       method="POST" encType="multipart/form-data">
         <input
+          className="contact-input-text"
           type="text"
           name="names"
           placeholder={this.state.names}
           onChange={(e) => this.handleChange(e)} /><br />
         <input
+          className="contact-input-text"
           type="email"
           name="email"
           placeholder={this.state.email}
           onChange={(e) => this.handleChange(e)} /><br />
         <input
+          className="contact-input-text"
           type="text"
           name="phone"
           placeholder={this.state.phone}
           onChange={(e) => this.handleChange(e)} /><br />
         <input
+          className="contact-input-text"
           type="text"
           name="website"
           placeholder={this.state.website}

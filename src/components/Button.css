@@ -13,6 +13,9 @@ a {
 .btn:hover {
   transform: scale(1.05);
 }
+.white {
+  background-color: white;
+}
 
 .white:hover {
   background-color: yellow;
