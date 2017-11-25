@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+
 import ProjectCard from './ProjectCard'
-import projectData from './project_data'
 import Modal from './Modal'
 import ProjectModal from './ProjectModal'
+
+import projectData from './project_data'
 
 var style = {
   container: {
@@ -38,7 +40,7 @@ class Projects extends Component {
     console.log(matchingData)
     return matchingData
   }
-
+  // TODO this whole multiple modals thing
   render() {
     const projectCards = projectData.map(project =>
       <ProjectCard
@@ -59,7 +61,7 @@ class Projects extends Component {
         </div>
         <Modal
           show={this.state.modalIsOpen}
-          onClose={() => this.toggleModal(project.id)}
+          onClose={() => this.toggleModal()}
           >
           <ProjectModal data={this.state.cardData}/>
         </Modal>
