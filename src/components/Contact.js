@@ -29,7 +29,9 @@ class Contact extends Component {
         </div>
         <Modal
           show={this.state.modalIsOpen}
-          onClose={this.toggleModal}>
+          onClose={this.toggleModal}
+
+        >
           <ContactForm />
         </Modal>
       </div>

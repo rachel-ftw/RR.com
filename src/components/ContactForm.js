@@ -11,8 +11,6 @@ class ContactForm extends Component {
       website: "website",
       details: "What kind of project is it? Supply some details including budget, timeline, and any other details.",
     }
-    // this.handleChange = this.handleChange.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
