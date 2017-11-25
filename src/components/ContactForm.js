@@ -9,16 +9,16 @@ class ContactForm extends Component {
       email: "email",
       phone: "phone",
       website: "website",
-      details: "",
+      details: "What kind of project is it? Supply some details including budget, timeline, and any other details.",
     }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
     const name = event.target.name
     this.setState({ [name]: event.target.value })
-    console.log(this.state.details)
+    console.log(this.state)
   }
 
   handleSubmit(event) {
@@ -29,16 +29,58 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input name="names" value={this.state.names} onChange={this.handleChange}/><br />
-        <input name="email" value={this.state.email} onChange={this.handleChange}/><br />
-        <input name="phone" value={this.state.phone} onChange={this.handleChange}/><br />
-        <input name="website" value={this.state.website} onChange={this.handleChange}/><br />
-        <textarea name="details" value={this.state.details} onChange={this.handleChange}/><br />
-        <input type="submit" value="submit" />
+      <form action="https://formspree.io/rachel@rachelralston.com"
+      method="POST" encType="multipart/form-data">
+        <input
+          type="text"
+          name="names"
+          placeholder={this.state.names}
+          onChange={(e) => this.handleChange(e)} /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder={this.state.email}
+          onChange={(e) => this.handleChange(e)} /><br />
+        <input
+          type="text"
+          name="phone"
+          placeholder={this.state.phone}
+          onChange={(e) => this.handleChange(e)} /><br />
+        <input
+          type="text"
+          name="website"
+          placeholder={this.state.website}
+          onChange={(e) => this.handleChange(e)} /><br />
+        <textarea
+          name="details"
+          placeholder={this.state.details}
+          onChange={(e) => this.handleChange(e)} /><br />
+
+        <input type="hidden" name="_replyto" value="rachel@rachelralston.com" />
+        <input type="hidden" name="_subject" value="RR.com: Contact form submitted"/>
+        <input type="hidden" name="_next" value="/"/>
+        <input type="hidden" name="_gotcha" value=""/>
+        <input type="submit" value="send" />
       </form>
     )
   }
 }
+
+////// HANDLE SUBMIT REACT WAY TODO
+// event.preventDefault()
+// console.log('do something with your form data')
+// // console.log(this.state)
+// let headers = new Headers();
+// let form = {
+//
+// }
+// let url = 'https://formspree.io/rachel@rachelralston.com'
+// let submitInfo = {
+//   method='POST',
+//   headers,
+//   credentials: 'omit',
+//   body: form
+// }
+// fetch(url, submitInfo)
 
 export default ContactForm
