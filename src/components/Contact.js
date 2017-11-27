@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import Modal from './Modal'
 import ContactForm from './ContactForm'
 
-import './Button.css'
-import './Contact.css'
+import '../styles/Button.css'
+import '../styles/Contact.css'
 
 class Contact extends Component {
   constructor(props) {
@@ -29,7 +29,8 @@ class Contact extends Component {
         </div>
         <Modal
           show={this.state.modalIsOpen}
-          onClose={this.toggleModal}>
+          onClose={this.toggleModal}
+        >
           <ContactForm />
         </Modal>
       </div>

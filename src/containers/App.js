@@ -6,19 +6,20 @@ import Projects from '../components/Projects'
 import Spacer from '../components/Spacer'
 import Contact from '../components/Contact'
 
-import './App.css'
+import '../styles/App.css'
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      modalIsOpen: false
+      contactModalOpen: false,
+      project1ModalOpen: false,
     }
   }
 
   toggleModal = () => {
     this.setState({
-      isOpen: !this.state.modalIsOpen
+      isOpen: !this.state.contactModalOpen
     })
   }
 
@@ -29,7 +30,7 @@ class App extends Component {
         <About />
         <Spacer height={50} />
         <Projects />
-        <Contact modalIsOpen={this.state.modalIsOpen}/>
+        <Contact contactModalOpen={this.state.contactModalOpen}/>
       </div>
     )
   }
