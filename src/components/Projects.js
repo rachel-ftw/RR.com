@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 import Modal from './Modal'
 import ProjectModal from './ProjectModal'
 
-import projectData from './project_data'
+import projectData from '../data/projects.json'
 
 var style = {
   container: {
