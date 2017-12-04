@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 import PrimaryNav from '../components/PrimaryNav'
 import About from '../components/About'
@@ -24,6 +25,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="content">
         <PrimaryNav />
@@ -35,5 +37,9 @@ class App extends Component {
     )
   }
 }
+function mapStateToProps(state) {
+  console.log('map State: ', state)
+  return {}
+}
 
-export default App
+export default connect(mapStateToProps, null)(App)
