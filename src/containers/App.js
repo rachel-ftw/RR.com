@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props)
+    console.log("this.props",this.props)
     return (
       <div className="content">
         <PrimaryNav />
@@ -39,7 +39,7 @@ class App extends Component {
 }
 function mapStateToProps(state) {
   console.log('map State: ', state)
-  return {}
+  return { modals: state.modals}
 }
 
 export default connect(mapStateToProps, null)(App)
