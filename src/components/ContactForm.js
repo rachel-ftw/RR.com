@@ -19,11 +19,6 @@ class ContactForm extends Component {
     this.setState({ [name]: target.value })
   }
 
-  handleSubmit(event) {
-    event.preventDefault()
-    console.log('do something with your form data')
-  }
-
   render() {
     return (
       <form
