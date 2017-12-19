@@ -6,13 +6,11 @@
   transition:all 0.3s ease;
 }
 
-a {
+.btn:hover {
+  transform: scale(1.05);
   text-decoration: none;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
 .white {
   background-color: white;
 }

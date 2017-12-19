@@ -62,7 +62,7 @@ class Projects extends Component {
         <Modal
           show={this.state.modalIsOpen}
           onClose={() => this.toggleModal()}
-          >
+        >
           <ProjectModal data={this.state.cardData}/>
         </Modal>
         </div>
