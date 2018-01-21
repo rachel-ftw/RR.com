@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const ProjectModal = (props) => {
-  return (
-    <div>
+class ProjectModal extends Component {
+  state = {
+    isOpen: false,
+  }
+  
+  render() {
+    return (
+      <div>
       Im a project modalIsOpen
       {props}
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default ProjectModal
