@@ -1,0 +1,15 @@
+.nav-container {
+  padding: 10px 30px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.rr-logo {
+  margin: 0;
+  padding: 6px 0 0 6px;
+  min-width: 30px;
+  min-height: 30px;
+  font-family: Permanent Marker, cursive;
+  border: solid 2px black;
+}

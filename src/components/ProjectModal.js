@@ -4,12 +4,12 @@ class ProjectModal extends Component {
   state = {
     isOpen: false,
   }
-  
+
   render() {
     return (
       <div>
       Im a project modalIsOpen
-      {props}
+      {this.props}
       </div>
     )
   }
