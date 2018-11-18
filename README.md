@@ -1,6 +1,10 @@
 # Rachel Ralston Portfolio
 
-Blockchain, Full Stack & Frontend, Killing it.
+Fullstack(ish) engineer and designer.
+
+### Stack
+React/Redux
+AWS
 
 
 ## Photo Credits
