@@ -6,9 +6,9 @@ const About = () => (
     className="container flex-column splash"
     style={{paddingBottom: '50px'}}
   >
-    <h1 className="name">Rachel Ralston</h1>
+    <h1 className="name">Rachel <br />Ralston</h1>
     <p className="sub-header">
-      a bay area full stack developer and designer
+      full stack(ish) developer and designer
     </p>
   </div>
 )
