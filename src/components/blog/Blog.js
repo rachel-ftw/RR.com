@@ -1,11 +1,14 @@
 import React from 'react'
 
-// import './BlogContainer.css'
+import BlurbCard from './BlurbCard'
 
-const BlogContainer = () => (
+const BlogContainer = ({ blogPosts }) => {
+  const blurbCards = blogPosts.map( post => <BlurbCard key={`post-${post.id}`} post={post} />)
+  return (
   <div className="blog">
     <h2>BLOG</h2>
+    {blurbCards}
   </div>
-)
+)}
 
 export default BlogContainer
