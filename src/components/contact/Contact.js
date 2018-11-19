@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import Modal from './Modal'
+import Modal from '../common/Modal'
 import ContactForm from './ContactForm'
 
-import '../styles/Button.css'
-import '../styles/Contact.css'
+import '../common/Button.css'
+import './Contact.css'
 
 class Contact extends Component {
   constructor(props) {

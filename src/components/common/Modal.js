@@ -1,23 +1,19 @@
 import React from 'react'
-import '../styles/Modal.css'
+import './Modal.css'
 
-const Modal = (props) => {
-  if(!props.show) {
-    return null;
-  }
-
-  return (
+const Modal = ({ show, children, onClose}) => (
+  show && (
     <div className="modal-backdrop">
       <div className="modal-window">
-        {props.children}
+        {children}
         <div className="footer">
-          <button onClick={props.onClose}>
+          <button onClick={onClose}>
             Close
           </button>
         </div>
       </div>
     </div>
-  )
-}
+  ) 
+)
 
 export default Modal

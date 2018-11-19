@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 import ProjectCard from './ProjectCard'
-import Modal from './Modal'
+import Modal from '../common/Modal'
 import ProjectModal from './ProjectModal'
 
-import projectData from '../data/projects.json'
+import projectData from '../../data/projects.json'
 
 var style = {
   container: {

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/PrimaryNav.css'
-import '../styles/About.css'
 
+import './PrimaryNav.css'
+import '../splash/About.css'
 
 const PrimaryNav = () => (
   <div className="nav-container">

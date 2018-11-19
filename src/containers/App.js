@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import PrimaryNav from '../components/PrimaryNav'
-import About from '../components/About'
-import Projects from '../components/Projects'
-import Spacer from '../components/Spacer'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import PrimaryNav from '../components/navigation/PrimaryNav'
+import About from '../components/splash/About'
+import Projects from '../components/projects/Projects'
+import Spacer from '../components/common/Spacer'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer'
 
 import { openModal } from '../actions/index'
 
-import '../styles/App.css'
+import './App.css'
 
 class App extends Component {
   render() {
-    console.log("this.props", this.props)
+    // console.log("this.props", this.props)
     return (
       <div className="content">
         <PrimaryNav />
@@ -27,8 +27,9 @@ class App extends Component {
     )
   }
 }
+
 function mapStateToProps(state) {
-  console.log('map State: ', state)
+  // console.log('map State: ', state)
   return { modals: state }
 }
 

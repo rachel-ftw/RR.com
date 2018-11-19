@@ -3,8 +3,9 @@
 Fullstack(ish) engineer and designer.
 
 ### Stack
-React/Redux
-AWS
+- React
+- Redux
+- AWS Serverless
 
 
 ## Photo Credits

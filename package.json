@@ -9,7 +9,7 @@
     "babel-preset-stage-1": "^6.16.0",
     "eslint-config-react-app": "^2.0.1",
     "ghooks": "^2.0.2",
-    "react-scripts": "0.6.1",
+    "react-scripts": "2.1.1",
     "webpack": "^3.8.1"
   },
   "dependencies": {
