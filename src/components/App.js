@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import About from './about/About'
 import Blog from './blog/Blog'
-import Contact from './contact/Contact'
 import Footer from './footer/Footer'
 import NavigationContainer from './navigation/NavigationContainer'
 import ProjectsContainer from './projects/ProjectsContainer'
@@ -22,7 +21,6 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={ProjectsContainer} />
             <Route exact path="/blog" component={Blog} />
-            <Route exact path="/contact" component={Contact} />
           </div>
           <Footer />
         </div>

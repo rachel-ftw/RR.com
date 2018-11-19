@@ -27,7 +27,7 @@ class NavigationContainer extends Component {
     return (
       <div>
         <HamburgerButton isOpen={isNavOpen} handleClick={toggleNavigation} />
-        { isNavOpen && <Menu />}
+        { isNavOpen && <Menu toggleNavigation={toggleNavigation} />}
       </div>
     )
   }
