@@ -1,11 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import Projects from './Projects'
+import { sortProjectCards } from '../../store/projects/actions'
 
-const ProjectsContainer = (props) => {
-  return (
-    <Projects {...props} />
-  )
+const ProjectsContainer = (props) => (
+  <Projects {...props} />
+)
+
+function mapStateToProps({ projects }) {
+  return { projectData: projects }
 }
 
-export default ProjectsContainer
+export default connect(mapStateToProps, { sortProjectCards })(ProjectsContainer)

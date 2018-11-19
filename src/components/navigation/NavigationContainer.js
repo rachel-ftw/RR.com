@@ -1,14 +1,37 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-import Content from './Content'
+import HamburgerButton from './HamburgerButton'
+import Menu from './Menu'
 
 import './NavigationContainer.css'
-import './Content.css'
 
-const NavigationContainer = () => (
-  <div className="nav-container">
-    <Content />
-  </div>
-)
+class NavigationContainer extends Component {
+  state = { isNavOpen: false }
+
+  openNavigation = () => {
+    this.setState({ isNavOpen: true })
+  }
+
+  closeNavigation = () => {
+    this.setState({ isNavOpen: false })
+  }
+
+  toggleNavigation = () => {
+    this.state.isNavOpen ? this.closeNavigation() : this.openNavigation()
+  }
+
+  render() {
+    const { toggleNavigation } = this
+    const { isNavOpen } = this.state
+
+    return (
+      <div>
+        <HamburgerButton isOpen={isNavOpen} handleClick={toggleNavigation} />
+        { isNavOpen && <Menu />}
+      </div>
+    )
+  }
+}
+
 
 export default NavigationContainer
