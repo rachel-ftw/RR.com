@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import PrimaryNav from '../components/navigation/PrimaryNav'
-import About from '../components/splash/About'
-import Projects from '../components/projects/Projects'
+import NavigationContainer from '../components/navigation/NavigationContainer'
+import ProjectsContainer from '../components/projects/ProjectsContainer'
 import Spacer from '../components/common/Spacer'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 
-import { openModal } from '../actions/index'
+import { openModal } from '../store/actions/contact'
+import { sortProjectCards } from '../store/actions/projects'
 
 import './App.css'
 
 class App extends Component {
   render() {
-    // console.log("this.props", this.props)
+    console.log("this.props", this.props)
+    const { projects, sortProjectCards } = this.props
     return (
       <div className="content">
-        <PrimaryNav />
-        <About />
+        <NavigationContainer />
         <Spacer height={50} />
-        <Projects />
+        <ProjectsContainer projectData={projects} sortProjectCards={sortProjectCards}/>
         <Contact />
         <Footer />
       </div>
@@ -28,9 +28,9 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps({ modals, projects }) {
   // console.log('map State: ', state)
-  return { modals: state }
+  return { modals, projects }
 }
 
-export default connect(mapStateToProps, { openModal })(App)
+export default connect(mapStateToProps, { openModal, sortProjectCards })(App)

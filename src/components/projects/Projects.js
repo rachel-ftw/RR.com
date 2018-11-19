@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 
-import ProjectCard from './ProjectCard'
+import Button from '../common/Button'
 import Modal from '../common/Modal'
+import ProjectCard from './ProjectCard'
 import ProjectModal from './ProjectModal'
-
-import projectData from '../../data/projects.json'
 
 var style = {
   container: {
@@ -27,7 +26,7 @@ class Projects extends Component {
     }
   }
 
-  toggleModal = (cardId) => {
+  toggleModal = cardId => {
     let cardData = this.toggleModal(cardId)
     this.setState({
       modalIsOpen: !this.state.modalIsOpen,
@@ -35,13 +34,21 @@ class Projects extends Component {
     })
   }
 
-  findModalData = (cardId) => {
-    let matchingData = projectData.filter(project => project.id === cardId)
+  findModalData = cardId => {
+    let matchingData = this.props.projectData.filter(project => project.id === cardId)
     console.log(matchingData)
     return matchingData
   }
-  // TODO this whole multiple modals thing
+
+  handleClick = btnType => {
+    const {sortProjectCards} = this.props
+    sortProjectCards(btnType)
+  }
+
   render() {
+    const { handleClick } = this
+    const { projectData } = this.props
+
     const projectCards = projectData.map(project =>
       <ProjectCard
         key={project.id}
@@ -51,11 +58,17 @@ class Projects extends Component {
         onClick={() => this.toggleModal(project.id)}
         />
     )
+
     return (
       <div className="flex-column" style={style.container}>
-        <h1 className="header secondary" style={{paddingBottom: '50px'}}>
+        <h2 className="header secondary">
           Projects
-        </h1>
+        </h2>
+        <div className="flex-row">
+          <Button color="white" content="code" onClick={() => handleClick('code')} />
+          <Button color="white" content="design" onClick={() => handleClick('design')} />
+          <Button color="white" content="all" onClick={() => handleClick('all')} />
+        </div>
         <div className="flex-row" style={style.flex}>
           {projectCards}
         </div>

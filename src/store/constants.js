@@ -1,0 +1,2 @@
+export const OPEN_MODAL = "OPEN_MODAL"
+export const SORT_PROJECT_CARDS = "SORT_PROJECT_CARDS"

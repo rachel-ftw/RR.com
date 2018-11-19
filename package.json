@@ -9,8 +9,7 @@
     "babel-preset-stage-1": "^6.16.0",
     "eslint-config-react-app": "^2.0.1",
     "ghooks": "^2.0.2",
-    "react-scripts": "2.1.1",
-    "webpack": "^3.8.1"
+    "react-scripts": "2.1.1"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
@@ -30,5 +29,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "pushstate build": "pushstate-server build"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

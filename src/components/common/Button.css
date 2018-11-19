@@ -3,7 +3,8 @@
   color: #333;
   padding: 10px;
   margin: 5px;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
+  /* max-width: 30px; */
 }
 
 .btn:hover {
@@ -13,10 +14,12 @@
 
 .white {
   background-color: white;
+  color: black;
 }
 
 .white:hover {
   background-color: yellow;
+  color: black;
 }
 
 .yellow {

@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux'
+
 import { modals } from './modals'
+import { projects } from './projects'
 
 const rootReducer = combineReducers({
-  modals
+  modals,
+  projects
 })
 
 export default rootReducer

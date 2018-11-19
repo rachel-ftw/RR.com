@@ -2,10 +2,8 @@ import React from 'react'
 
 import './Button.css'
 
-const Button = ({ link, color, text }) => (
-  <a href={link}>
-    <div className={color}>{text}</div>
-  </a>
+const Button = ({ color, content, onClick }) => (
+  <div className={`btn ${color}`} onClick={() => onClick()}>{content}</div>
 )
 
 

@@ -4,8 +4,8 @@ import './Footer.css'
 
 const Footer = () => (
   <div className="footer">
-    this website was lovingly made by hand<br />
-    check out the <a href="https://www.github.com/rachel-ftw/portfolio-website" target="_blank">github</a> for details.
+    this website was lovingly made by hand.<br />
+    check out the <a href="https://www.github.com/rachel-ftw/portfolio-website" target="_blank" rel="noopener noreferrer">github</a> for details.
   </div>
 )
 
