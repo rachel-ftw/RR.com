@@ -1,41 +1,45 @@
 [
   {
     "id":1,
+    "publishDate": "01-01-2015",
     "slug": "code",
     "tags": "Circle CI",
     "github": "https://github.com/rachel-ftw/goalie-local.git",
-    "splash-image": "./uma.jpg",
-    "title": "LOLCHAIN",
+    "image": "./uma.jpg",
+    "title": "What I've learned while teaching engineering.",
     "blurb": "Goalie is an internal project tracking dashboard.",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "id":2,
+    "publishDate": "01-01-2015",
     "slug": "code",
     "tags": "Pug, Yarn, Node, JS, CSS, Mocha/Chai/Sinon/Istanbul, Sequelize, Express",
     "github": "https://github.com/GuildCrafts/floworky",
-    "splash-image": "./img/Brutalized-Gainsborough.jpg",
-    "title": "FLOWORKY",
+    "image": "./img/Brutalized-Gainsborough.jpg",
+    "title": "A dive into `this`",
     "blurb": "Floworky is an open source workflowy clone.",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "id":3,
+    "publishDate": "01-01-2015",
     "slug": "code",
     "tags": "Webpack, Babel, ESLint, Sass, Knex",
     "github": "https://github.com/rachel-ftw/Trossello",
-    "splash-image": "./water_background.jpg",
-    "title": "TROSSELLO",
+    "image": "./water_background.jpg",
+    "title": "Why you should do open source stuff.",
     "blurb": "Trossello is an open source Trello clone.",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "id":4,
+    "publishDate": "01-01-2015",
     "slug": "design",
     "tags": "Photoshop",
     "github": "https://github.com/rachel-ftw/Trossello",
-    "splash-image": "./water_background.jpg",
-    "title": "SOME DESIGN THING",
+    "image": "./water_background.jpg",
+    "title": "Epic adventures, epic results.",
     "blurb": "Lorem ipsum something something.",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }
