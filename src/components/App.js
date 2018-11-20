@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import About from './about/About'
-import Blog from './blog/Blog'
+import BlogContainer from './blog/BlogContainer'
 import Footer from './footer/Footer'
 import NavigationContainer from './navigation/NavigationContainer'
 import ProjectsContainer from './projects/ProjectsContainer'
@@ -20,7 +20,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={ProjectsContainer} />
-            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/blog" component={BlogContainer} />
           </div>
           <Footer />
         </div>
