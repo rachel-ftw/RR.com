@@ -14,6 +14,7 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s;
+  z-index: 10;
 }
 
 .c-hamburger:focus {
@@ -62,7 +63,7 @@
 .c-hamburger-x span::before,
 .c-hamburger-x span::after {
   transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
+  transition-delay: 0.2s, 0s;
 }
 
 .c-hamburger-x span::before {

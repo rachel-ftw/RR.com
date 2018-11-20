@@ -26,6 +26,9 @@ class NavigationContainer extends Component {
 
     return (
       <div>
+        <div className="expanding-background-container">
+          <div className={`expanding-background ${isNavOpen ? 'open' : 'closed'}`}></div>
+        </div>
         <HamburgerButton isOpen={isNavOpen} handleClick={toggleNavigation} />
         { isNavOpen && <Menu toggleNavigation={toggleNavigation} />}
       </div>

@@ -37,3 +37,9 @@ h3 {
 p {
   line-height: 2em;
 }
+
+a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  color: palevioletred;
+}

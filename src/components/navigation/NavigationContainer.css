@@ -1,1 +1,23 @@
+.expanding-background-container {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 0;
+  background-color: transparent;
+}
 
+.expanding-background {
+  position: relative;
+  top: -.5em;
+  left: -.5em;
+  width: 1em;
+  height: 1em;
+  background-color: yellow;
+  border-radius: 50%;
+  transition: all .4s ease-in-out;
+}
+
+.expanding-background.open {
+  overflow: hidden;
+  transform: scale(200);
+}

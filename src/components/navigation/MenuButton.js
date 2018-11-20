@@ -5,9 +5,9 @@ const MenuButton = ({ destination, handleClick }) => {
   const link = destination === 'home' ? '/' : `/${destination}`
 
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className="navigation-menu-button">
       <Link to={link}>
-        <div className="navigation-menu-button">
+        <div className="navigation-menu-button-link">
           {destination}
         </div>
       </Link>

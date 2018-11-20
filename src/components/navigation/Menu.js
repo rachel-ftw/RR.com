@@ -5,9 +5,9 @@ import MenuButton from './MenuButton'
 import './Menu.css'
 
 const Menu = ({ toggleNavigation }) => {
-  let pages = ['home', 'about', 'projects', 'blog']
-  let menuButtons = pages.map((page, index) => (
-    <MenuButton key={`nav-${index}`} destination={page} handleClick={ toggleNavigation }/>
+  const pages = ['home', 'about', 'projects', 'blog']
+  const menuButtons = pages.map((page, index) => (
+    <MenuButton key={`nav-${index}`} destination={page} handleClick={toggleNavigation}/>
   ))
   
   return (
