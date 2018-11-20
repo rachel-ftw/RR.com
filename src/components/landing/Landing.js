@@ -1,10 +1,10 @@
 import React from 'react'
 
-import './Splash.css'
+import './Landing.css'
 
-const Splash = () => (
-  <div className="splash-container">
-    <div className="container flex-column splash">
+const Landing = () => (
+  <div className="landing-container">
+    <div className="container flex-column landing">
       <h1 className="name">Rachel <br />Ralston</h1>
       <h2 className="sub-header">
         full stack(ish) developer and designer
@@ -14,4 +14,4 @@ const Splash = () => (
   </div>
 )
 
-export default Splash
+export default Landing

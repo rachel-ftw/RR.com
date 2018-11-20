@@ -6,7 +6,7 @@ import Blog from './blog/Blog'
 import Footer from './footer/Footer'
 import NavigationContainer from './navigation/NavigationContainer'
 import ProjectsContainer from './projects/ProjectsContainer'
-import Splash from './splash/Splash'
+import Landing from './landing/Landing'
 
 import './App.css'
 
@@ -17,7 +17,7 @@ class App extends Component {
         <div className="app">
           <NavigationContainer />
           <div>
-            <Route exact path="/" component={Splash} />
+            <Route exact path="/" component={Landing} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={ProjectsContainer} />
             <Route exact path="/blog" component={Blog} />
