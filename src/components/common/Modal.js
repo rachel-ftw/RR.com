@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import './Modal.css'
 
 class Modal extends Component {
@@ -9,11 +10,15 @@ class Modal extends Component {
       isOpen ? (
         <div className="modal-backdrop">
           <div className="modal-window">
-            {children}
+            <div className="modal-header">
+              <div onClick={onClose} className="modal-header-close-icon">
+                <span>Close</span>
+              </div>
+            </div>
+            <div className="modal-body">
+              {children}
+            </div>
             <div className="modal-footer">
-              <button onClick={onClose}>
-                Close
-              </button>
             </div>
           </div>
         </div>
