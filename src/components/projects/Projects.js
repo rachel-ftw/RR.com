@@ -5,49 +5,27 @@ import Modal from '../common/Modal'
 import ProjectCard from './ProjectCard'
 import ProjectModal from './ProjectModal'
 
-var style = {
-  container: {
-    backgroundColor: '#333',
-    color: '#fff',
-    paddingTop: '80px',
-    paddingBottom: '100px',
-  },
-  flex: {
-    justifyContent: 'space-around'
-  }
-}
-
 class Projects extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      modalIsOpen: false,
-      cardData: null,
-    }
+  state = { isModalOpen: false, cardData: null }
+
+  toggleProjectsModal = cardId => {
+    const { isModalOpen } = this.state
+    cardId === undefined ? 
+      this.setState({ isModalOpen: false, cardData: null }) :
+      this.setState({
+        isModalOpen: isModalOpen ? false : true,
+        cardData: this.findModalContent(cardId)
+      })
   }
 
-  toggleModal = cardId => {
-    let cardData = this.toggleModal(cardId)
-    this.setState({
-      modalIsOpen: !this.state.modalIsOpen,
-      projectShown: this.state.cardData === null ? cardData : null,
-    })
-  }
+  findModalContent = cardId => this.props.projectData.filter(project => project.id === cardId)[0]
 
-  findModalData = cardId => {
-    let matchingData = this.props.projectData.filter(project => project.id === cardId)
-    console.log(matchingData)
-    return matchingData
-  }
-
-  handleClick = btnType => {
-    const {sortProjectCards} = this.props
-    sortProjectCards(btnType)
-  }
+  handleSortCards = btnType => this.props.sortProjectCards(btnType)
 
   render() {
-    const { handleClick } = this
+    const { handleSortCards, toggleProjectsModal } = this
     const { projectData } = this.props
+    const { isModalOpen, cardData } = this.state
 
     const projectCards = projectData.map(project =>
       <ProjectCard
@@ -55,31 +33,32 @@ class Projects extends Component {
         image={project.image}
         title={project.title}
         blurb={project.blurb}
-        onClick={() => this.toggleModal(project.id)}
+        id={project.id}
+        handleClick={toggleProjectsModal}
         />
     )
 
     return (
-      <div className="flex-column" style={style.container}>
-        <h2 className="header secondary">
-          Projects
+      <div className="projects flex-column">
+        <h2 className="page-title">
+          projects
         </h2>
         <div className="flex-row">
-          <Button color="white" content="code" onClick={() => handleClick('code')} />
-          <Button color="white" content="design" onClick={() => handleClick('design')} />
-          <Button color="white" content="all" onClick={() => handleClick('all')} />
+          <Button color="white" content="code" onClick={() => handleSortCards('code')} />
+          <Button color="white" content="design" onClick={() => handleSortCards('design')} />
+          <Button color="white" content="all" onClick={() => handleSortCards('all')} />
         </div>
-        <div className="flex-row" style={style.flex}>
+        <div className="card-container flex-column">
           {projectCards}
         </div>
         <Modal
-          show={this.state.modalIsOpen}
-          onClose={() => this.toggleModal()}
+          isOpen={isModalOpen}
+          onClose={toggleProjectsModal}
         >
-          <ProjectModal data={this.state.cardData}/>
+          <ProjectModal data={cardData}/>
         </Modal>
-        </div>
-      )
+      </div>
+    )
   }
 }
 

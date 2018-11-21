@@ -12,9 +12,18 @@ body {
   max-width: 100vw;
 }
 
+.app-content {
+  margin: 0 10px;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .flex-column {
@@ -42,4 +51,11 @@ a {
   text-decoration: none;
   font-family: 'Lora', serif;
   color: palevioletred;
+}
+
+.page-title {
+  font-family: 'Lora', serif;
+  font-size: 3em;
+  padding: .5em 0 .5em 0;
+  margin: 0;
 }

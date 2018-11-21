@@ -2,8 +2,8 @@ import React from 'react'
 
 import './ProjectCard.css'
 
-const ProjectCard = ({ image, title, blurb }) => (
-  <div className="project-card" >
+const ProjectCard = ({ image, title, blurb, id, handleClick }) => (
+  <div className="project-card" onClick={() => handleClick(id)}>
     <div
       className="project-img"
       style={{backgroundImage: `url('${image}')`}}

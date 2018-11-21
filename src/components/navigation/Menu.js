@@ -4,14 +4,14 @@ import MenuButton from './MenuButton'
 
 import './Menu.css'
 
-const Menu = ({ toggleNavigation }) => {
+const Menu = ({ handleClick }) => {
   const pages = ['home', 'about', 'projects', 'blog']
   const menuButtons = pages.map((page, index) => (
-    <MenuButton key={`nav-${index}`} destination={page} handleClick={toggleNavigation}/>
+    <MenuButton key={`nav-${index}`} destination={page} handleClick={handleClick}/>
   ))
   
   return (
-    <div className="navigation-menu">
+    <div className="flex-column navigation-menu">
       {menuButtons}
     </div>
   )

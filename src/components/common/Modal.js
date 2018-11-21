@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './Modal.css'
 
-const Modal = ({ show, children, onClose}) => (
-  show && (
-    <div className="modal-backdrop">
-      <div className="modal-window">
-        {children}
-        <div className="footer">
-          <button onClick={onClose}>
-            Close
-          </button>
+class Modal extends Component {
+
+  render() {
+    const { isOpen, children, onClose} = this.props
+    return (
+      isOpen ? (
+        <div className="modal-backdrop">
+          <div className="modal-window">
+            {children}
+            <div className="modal-footer">
+              <button onClick={onClose}>
+                Close
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  ) 
-)
+      ) : null
+    )
+  }
+}
 
 export default Modal

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import About from './about/About'
 import BlogContainer from './blog/BlogContainer'
 import Footer from './footer/Footer'
-import NavigationContainer from './navigation/NavigationContainer'
+import Navigation from './navigation/Navigation'
 import ProjectsContainer from './projects/ProjectsContainer'
 import Landing from './landing/Landing'
 
@@ -15,14 +15,14 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <NavigationContainer />
-          <div>
+          <Navigation />
+          <div className="app-content">
             <Route exact path="/" component={Landing} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={ProjectsContainer} />
             <Route exact path="/blog" component={BlogContainer} />
+            <Footer />
           </div>
-          <Footer />
         </div>
       </Router>
     )

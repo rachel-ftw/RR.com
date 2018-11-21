@@ -6,8 +6,6 @@ import { sortProjectCards } from '../../store/projects/actions'
 
 const ProjectsContainer = props => <Projects {...props} />
 
-function mapStateToProps({ projects }) {
-  return { projectData: projects }
-}
+const mapStateToProps = ({ projects }) => ({ projectData: projects })
 
 export default connect(mapStateToProps, { sortProjectCards })(ProjectsContainer)

@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 
 import HamburgerButton from './HamburgerButton'
 import Menu from './Menu'
+import MenuOverlay from './MenuOverlay'
 
-import './NavigationContainer.css'
+import './Navigation.css'
 
-class NavigationContainer extends Component {
+class Navigation extends Component {
   state = { isNavOpen: false }
 
   openNavigation = () => {
@@ -25,16 +26,18 @@ class NavigationContainer extends Component {
     const { isNavOpen } = this.state
 
     return (
-      <div>
-        <div className="expanding-background-container">
-          <div className={`expanding-background ${isNavOpen ? 'open' : 'closed'}`}></div>
+      <div className="flex-row-reverse">
+        <div>
+          <MenuOverlay isOpen={isNavOpen} />
+          <HamburgerButton isOpen={isNavOpen} handleClick={toggleNavigation} />
         </div>
-        <HamburgerButton isOpen={isNavOpen} handleClick={toggleNavigation} />
-        { isNavOpen && <Menu toggleNavigation={toggleNavigation} />}
+        <div>
+          { isNavOpen && <Menu handleClick={toggleNavigation} />}
+        </div>
       </div>
     )
   }
 }
 
 
-export default NavigationContainer
+export default Navigation
