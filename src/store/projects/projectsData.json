@@ -2,7 +2,7 @@
   {
     "id":1,
     "type": "code",
-    "technologies": "Circle CI",
+    "technologies": ["Circle CI"],
     "github": "https://github.com/rachel-ftw/goalie-local.git",
     "image": "./uma.jpg",
     "title": "LOLCHAIN",
@@ -11,7 +11,7 @@
   {
     "id":2,
     "type": "code",
-    "technologies": "Pug, Yarn, Node, JS, CSS, Mocha/Chai/Sinon/Istanbul, Sequelize, Express",
+    "technologies": ["Pug", "Yarn", "Node", "JS", "CSS", "Mocha/Chai/Sinon/Istanbul", "Sequelize", "Express"],
     "github": "https://github.com/GuildCrafts/floworky",
     "image": "./img/Brutalized-Gainsborough.jpg",
     "title": "FLOWORKY",
@@ -20,7 +20,7 @@
   {
     "id":3,
     "type": "code",
-    "technologies": "Webpack, Babel, ESLint, Sass, Knex",
+    "technologies": ["Webpack", "Babel", "ESLint", "Sass", "Knex"],
     "github": "https://github.com/rachel-ftw/Trossello",
     "image": "./water_background.jpg",
     "title": "TROSSELLO",
@@ -29,7 +29,7 @@
   {
     "id":4,
     "type": "design",
-    "technologies": "Photoshop",
+    "technologies": ["Photoshop"],
     "github": "https://github.com/rachel-ftw/Trossello",
     "image": "./water_background.jpg",
     "title": "SOME DESIGN THING",
