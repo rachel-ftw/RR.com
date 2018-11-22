@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Button from '../common/Button'
 import Modal from '../common/Modal'
 import ProjectCard from './ProjectCard'
-import ProjectModal from './ProjectModal'
+import ModalContent from './ModalContent'
 
 class Projects extends Component {
   state = { isModalOpen: false, cardData: null }
@@ -52,8 +52,9 @@ class Projects extends Component {
         <Modal
           isOpen={isModalOpen}
           onClose={closeProjectsModal}
+          imageUrl={cardData ? cardData.image : undefined}
         >
-          <ProjectModal data={cardData}/>
+          <ModalContent data={cardData}/>
         </Modal>
       </div>
     )
