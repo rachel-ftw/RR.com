@@ -13,7 +13,7 @@ const ModalContent = ({ data }) => {
     <span className="project-modal-type">{type}</span>
     <h1 className="project-modal-title">{title}</h1>
     <div className="project-modal-tech flex-row">{techUsed}</div>
-    <p>{blurb}</p>
+    <p className="project-modal-content">{blurb}</p>
   </div>
 )}
 

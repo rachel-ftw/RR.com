@@ -8,6 +8,10 @@
   transition: all ease-in .5s;
 }
 
+.project-text-area p {
+  line-height: 1.2em;
+}
+
 .project-text-area:hover {
   padding: 5px 10px;
   background-color: rgba(223, 223, 223, 0.815)
