@@ -10,6 +10,8 @@ const Landing = () => (
         full stack(ish) developer and designer
       </h2>
       <p>I'm an illustrator turned design lead turned engineer. My professional expierence is mostly in front end, but I'm capable up and down the stack.</p>
+      <p>Download my resume or email me.</p>
+      
     </div>
   </div>
 )
