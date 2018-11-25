@@ -3,19 +3,17 @@ import React, { Component } from 'react'
 import Button from '../common/Button'
 import Modal from '../common/Modal'
 import ProjectCard from './ProjectCard'
-import ProjectModal from './ProjectModal'
+import ModalContent from './ModalContent'
 
 class Projects extends Component {
   state = { isModalOpen: false, cardData: null }
 
-  toggleProjectsModal = cardId => {
-    const { isModalOpen } = this.state
-    cardId === undefined ? 
-      this.setState({ isModalOpen: false, cardData: null }) :
-      this.setState({
-        isModalOpen: isModalOpen ? false : true,
-        cardData: this.findModalContent(cardId)
-      })
+  closeProjectsModal = () => {
+    this.setState({ isModalOpen: false, cardData: null })
+  }
+
+  openProjectsModal = cardId => {
+    this.setState({ cardData: this.findModalContent(cardId), isModalOpen: true })
   }
 
   findModalContent = cardId => this.props.projectData.filter(project => project.id === cardId)[0]
@@ -23,7 +21,7 @@ class Projects extends Component {
   handleSortCards = btnType => this.props.sortProjectCards(btnType)
 
   render() {
-    const { handleSortCards, toggleProjectsModal } = this
+    const { handleSortCards, openProjectsModal, closeProjectsModal } = this
     const { projectData } = this.props
     const { isModalOpen, cardData } = this.state
 
@@ -34,8 +32,8 @@ class Projects extends Component {
         title={project.title}
         blurb={project.blurb}
         id={project.id}
-        handleClick={toggleProjectsModal}
-        />
+        handleClick={openProjectsModal}
+      />
     )
 
     return (
@@ -53,9 +51,10 @@ class Projects extends Component {
         </div>
         <Modal
           isOpen={isModalOpen}
-          onClose={toggleProjectsModal}
+          onClose={closeProjectsModal}
+          imageUrl={cardData ? cardData.image : undefined}
         >
-          <ProjectModal data={cardData}/>
+          <ModalContent data={cardData}/>
         </Modal>
       </div>
     )

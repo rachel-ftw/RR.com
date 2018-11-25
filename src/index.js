@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import App from './components/App'
+// import { faGithubSquare } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { library } from '@fortawesome/fontawesome-svg-core'
+import { Provider } from 'react-redux'
 
+import App from './components/App'
 import rootReducer from './store/rootReducer'
+
+// library.add(faGithubSquare)
 
 let store = createStore(rootReducer)
 

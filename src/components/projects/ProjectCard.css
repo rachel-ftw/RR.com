@@ -1,21 +1,26 @@
 .project-card {
   padding: 8px;
   margin: 5px;
-  background-color: bisque;
-}
-
-.project-img {
-  min-height: 10em;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .project-text-area {
   padding: 5px 10px;
+  transition: all ease-in .5s;
+}
+
+.project-text-area p {
+  line-height: 1.2em;
+}
+
+.project-text-area:hover {
+  padding: 5px 10px;
+  background-color: rgba(223, 223, 223, 0.815)
 }
 
 .project-title {
+  color: #fff;
   text-align: center; 
   font-size: 1.5em;
+  background-color: red;
+  width: 200px;
 }

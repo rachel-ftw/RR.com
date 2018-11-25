@@ -31,6 +31,17 @@ body {
   flex-direction: column;
 }
 
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 h1 {
   font-family: 'Lora', serif;
 }
@@ -58,4 +69,5 @@ a {
   font-size: 3em;
   padding: .5em 0 .5em 0;
   margin: 0;
+  text-align: center;
 }

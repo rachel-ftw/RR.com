@@ -1,30 +1,29 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import './Modal.css'
 
-class Modal extends Component {
+const Modal = ({ isOpen, children, onClose, imageUrl }) => {
+  const hasImage = imageUrl !== undefined ? 'has-image cover-image' : ''
+  const inlineStyle = imageUrl ? { backgroundImage: `url('${imageUrl}')` } : {}
 
-  render() {
-    const { isOpen, children, onClose} = this.props
-    return (
-      isOpen ? (
-        <div className="modal-backdrop">
-          <div className="modal-window">
-            <div className="modal-header">
-              <div onClick={onClose} className="modal-header-close-icon">
-                <span>Close</span>
-              </div>
-            </div>
-            <div className="modal-body">
-              {children}
-            </div>
-            <div className="modal-footer">
+  return (
+    isOpen ? (
+      <div className="modal-backdrop">
+        <div className="modal-window">
+          <div 
+            className={`modal-header ${hasImage}`}
+            style={inlineStyle}>
+            <div onClick={onClose} className="modal-header-close-icon">
+              <span>X</span>
             </div>
           </div>
+          <div className="modal-body">
+            {children}
+          </div>
         </div>
-      ) : null
-    )
-  }
+      </div>
+    ) : null
+  )
 }
 
 export default Modal

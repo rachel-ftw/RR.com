@@ -1,8 +1,8 @@
 .footer {
-  max-width: 200px;
+  width: 100%;
+  margin: 3em 0 1em 0;
 }
 
 .footer span {
   font-size: .8em;
-  line-height: .3em;
 }

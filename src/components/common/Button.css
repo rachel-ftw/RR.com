@@ -1,16 +1,21 @@
 .btn {
   border: black 2px solid;
   color: #333;
-  padding: 10px;
-  margin: 5px;
   transition: all 0.3s ease;
-  /* max-width: 30px; */
 }
 
 .btn:hover {
   transform: scale(1.05);
   text-decoration: none;
 }
+
+.flat:hover {
+  transform: scale(1);
+}
+
+
+
+/****** colors ******/
 
 .white {
   background-color: white;
@@ -28,4 +33,19 @@
 
 .yellow:hover {
   background-color: white;
+}
+
+
+
+/****** sizes ******/
+
+.small {
+  font-size: .6em;
+  padding: 5px;
+  margin: 3px;
+}
+
+.medium {
+  padding: 10px;
+  margin: 5px;
 }

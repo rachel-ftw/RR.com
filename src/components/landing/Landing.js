@@ -9,7 +9,9 @@ const Landing = () => (
       <h2 className="sub-header">
         full stack(ish) developer and designer
       </h2>
-      <p>I'm an illustrator turned design lead turned engineer. My professional expierence is mostly in front end, but I'm capable up and down the stack.</p>
+      <p>I'm an illustrator turned design lead turned engineer. My professional expierence is mostly in front end, but I'm capable up and down the stack. Currently a front end engineer at Wells Fargo.</p>
+      <p>Download my resume or email me.</p>
+      
     </div>
   </div>
 )
