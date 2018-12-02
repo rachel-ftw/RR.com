@@ -2,18 +2,29 @@
   font-size: 5em;
   margin: 0;
   margin-top: 10px;
+  background-image: linear-gradient(to right, #ff00ff, #02ff74);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .sub-header {
   font-family: 'Lato', san-serif;
   font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .landing-container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  min-height: 30px;
   padding: 10px 30px;
+}
+
+.icon-group {
+  margin: 0 auto;
 }

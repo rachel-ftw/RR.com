@@ -5,6 +5,8 @@ import Modal from '../common/Modal'
 import ProjectCard from './ProjectCard'
 import ModalContent from './ModalContent'
 
+import './Projects.css'
+
 class Projects extends Component {
   state = { isModalOpen: false, cardData: null }
 
@@ -38,15 +40,15 @@ class Projects extends Component {
 
     return (
       <div className="projects flex-column">
-        <h2 className="page-title">
+        <h2 className="projects--title page-title">
           projects
         </h2>
-        <div className="flex-row">
+        <div className="projects--buttons flex-row">
           <Button color="white" content="code" onClick={() => handleSortCards('code')} />
           <Button color="white" content="design" onClick={() => handleSortCards('design')} />
           <Button color="white" content="all" onClick={() => handleSortCards('all')} />
         </div>
-        <div className="card-container flex-column">
+        <div className="projects--cards flex-column">
           {projectCards}
         </div>
         <Modal
