@@ -5,13 +5,14 @@ import './Landing.css'
 const Landing = () => (
   <div className="landing-container">
     <div className="container flex-column landing">
-      <h1 className="name">Rachel <br />Ralston</h1>
+      <h1 className="name">Rachel Ralston</h1>
       <h2 className="sub-header">
-        full stack(ish) developer and designer
+        full stack developer and designer
       </h2>
-      <p>I'm an illustrator turned design lead turned engineer. My professional expierence is mostly in front end, but I'm capable up and down the stack. Currently a front end engineer at Wells Fargo.</p>
-      <p>Download my resume or email me.</p>
-      
+      <div className="icon-group">[LI] [GH] [DBBL] [EML]</div>
+      <p>I'm an engineer, illustrator & desiger living in the Bay Area. My professional expierence is 
+        mostly in front end, but I'm capable up and down the stack. Currently a front end engineer at 
+        Wells Fargo. Check out my resume or email me.</p>
     </div>
   </div>
 )
