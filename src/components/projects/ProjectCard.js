@@ -1,12 +1,11 @@
 import React from 'react'
 
 import Button from '../common/Button'
-import { twelveWordBlurb } from '../common/utilities.js'
 
 import './ProjectCard.css'
 
 const ProjectCard = ({ project: { image, title, id, technologies, type, ...rest}, handleClick }) => {
-  console.log(rest)
+  // console.log(image)
   return (
   <div className="project">
     <div 

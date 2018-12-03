@@ -1,28 +1,40 @@
 .project {
   position: relative;
 }
+
 .project--image {
   padding: 80px 8px 8px 8px;
-  margin: 5px;
+  margin: 10px;
   height: 100px;
-  background-blend-mode: multiply;
+  background-blend-mode: screen;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+  box-shadow: 3px 3px 8px rgba(4, 20, 31, 0.7);
+}
+
+.project--image:hover {
+  scale: 1.01;
+  box-shadow: 5px 5px 15px rgba(4, 20, 31, 0.5);
 }
 
 .project--text {
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   transition: all ease-in .5s;
 }
 
 .project--text-title {
   position: absolute;
   top: 40px;
-  color: #fff;
+  color: #333;
+  border: #000 3px solid;
+  background-color: #fff;
   font-size: 1.5em;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom, 
     rgba(0, 92, 151, 0.9), 
+    rgba(68, 54, 149, 0.9)
     rgba(54, 55, 149, 0.9)
-  );
+  ); */
   padding: 10px 10px 5px 10px;
 }
 
@@ -31,3 +43,4 @@
   top: 120px;
   flex-wrap: wrap;
 }
+

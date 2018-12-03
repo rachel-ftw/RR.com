@@ -36,7 +36,17 @@ class Projects extends Component {
     )
 
     return (
-      <div className="projects flex-column">
+      <div 
+        className="projects flex-column cover-image" 
+        // style={{ backgroundImage: `
+        // linear-gradient(
+        //   to right bottom, 
+        //   rgb(0, 200, 255), 
+        //   rgba(68, 54, 149, 0.9)), 
+        //     url('./projects-background2.jpg')
+        //     ` 
+        //   }} 
+      >
         <h2 className="projects--title page-title">
           projects
         </h2>
@@ -45,7 +55,7 @@ class Projects extends Component {
           <Button color="white" content="design" onClick={() => handleSortCards('design')} />
           <Button color="white" content="all" onClick={() => handleSortCards('all')} />
         </div>
-        <div className="projects--cards flex-column">
+        <div className="projects--cards">
           {projectCards}
         </div>
         <Modal
