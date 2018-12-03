@@ -1,5 +1,7 @@
 import React from 'react'
 
+import SocialMedia from '../common/SocialMedia'
+
 import './Landing.css'
 
 const Landing = () => (
@@ -9,7 +11,7 @@ const Landing = () => (
       <h2 className="sub-header">
         full stack developer and designer
       </h2>
-      <div className="icon-group">[LI] [GH] [DBBL] [EML]</div>
+      <SocialMedia />
       <p>I'm an engineer, illustrator & desiger living in the Bay Area. My professional expierence is 
         mostly in front end, but I'm capable up and down the stack. Currently a front end engineer at 
         Wells Fargo. Check out my resume or email me.</p>

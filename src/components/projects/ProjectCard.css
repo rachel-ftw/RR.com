@@ -1,6 +1,10 @@
-.project--card {
-  padding: 8px;
+.project {
+  position: relative;
+}
+.project--image {
+  padding: 80px 8px 8px 8px;
   margin: 5px;
+  height: 100px;
   background-blend-mode: multiply;
 }
 
@@ -9,13 +13,10 @@
   transition: all ease-in .5s;
 }
 
-.project--text:hover {
-  background-color: rgb(255, 255, 255)
-}
-
 .project--text-title {
+  position: absolute;
+  top: 40px;
   color: #fff;
-  text-align: center; 
   font-size: 1.5em;
   background-image: linear-gradient(
     to right bottom, 
@@ -25,6 +26,8 @@
   padding: 10px 10px 5px 10px;
 }
 
-.project--text-blurb {
-  line-height: 1.2em;
+.project--text-buttons {
+  position: absolute;
+  top: 120px;
+  flex-wrap: wrap;
 }

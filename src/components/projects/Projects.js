@@ -30,10 +30,7 @@ class Projects extends Component {
     const projectCards = projectData.map(project =>
       <ProjectCard
         key={project.id}
-        image={project.image}
-        title={project.title}
-        blurb={project.blurb}
-        id={project.id}
+        project={project}
         handleClick={openProjectsModal}
       />
     )

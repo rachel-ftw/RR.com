@@ -1,8 +1,8 @@
-.project-modal-container {
+.modal--container {
   position: relative;
 }
 
-.project-modal-type {
+.modal--type {
   position: absolute;
   top: -220px;
   background-color: red;
@@ -10,14 +10,14 @@
 
 }
 
-.project-modal-title {
+.modal--title {
   position: absolute;
   top: -200px;
   background-color: red;
   padding: 0 10px;
 }
 
-.project-modal-tech {
+.modal--tech {
   margin-top: 19px;
   flex-wrap: wrap;
 }
