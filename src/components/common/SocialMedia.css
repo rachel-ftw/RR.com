@@ -1,0 +1,19 @@
+.sm-icon-group {
+  margin: 5px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 200px;
+}
+
+.sm-icon-group svg {
+  scale: 1.4;
+  color: #999;
+  transition: all .3s ease-in-out;
+}
+
+.sm-icon-group svg:hover {
+  scale: 1.5;
+  color: #333;
+}

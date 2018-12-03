@@ -1,5 +1,15 @@
 import React from 'react'
+import { TiSocialDribbbleCircular, TiSocialGithubCircular, TiSocialLinkedinCircular, TiMail } from 'react-icons/ti'
 
-const SocialMedia = () => <div className="icon-group">[LI] [GH] [DBBL] [EML]</div>
+import './SocialMedia.css'
+
+const SocialMedia = () => (
+  <div className="sm-icon-group">
+    <TiSocialLinkedinCircular />
+    <TiSocialGithubCircular />
+    <TiSocialDribbbleCircular />
+    <TiMail />
+  </div>
+)
 
 export default SocialMedia
