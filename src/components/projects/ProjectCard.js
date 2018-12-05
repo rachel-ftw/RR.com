@@ -15,8 +15,8 @@ const ProjectCard = ({ project: { image, title, id, technologies, type, ...rest}
         backgroundImage: `
           linear-gradient(
             to right bottom, 
-            rgb(255, 0, 255), 
-            rgb(0, 200, 255)), 
+            rgba(255, 174, 0, 1), 
+            rgba(15, 255, 183, 1)), 
             url('${image}')
         `,
       }}
