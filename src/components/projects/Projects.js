@@ -1,21 +1,27 @@
 import React, { Component } from 'react'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 import Button from '../common/Button'
 import Modal from '../common/Modal'
-import ProjectCard from './ProjectCard'
 import ModalContent from './ModalContent'
+import ProjectCard from './ProjectCard'
 
 import './Projects.css'
 
 class Projects extends Component {
-  state = { isModalOpen: false, cardData: null }
+  state = { 
+    cardData: null,
+    isModalOpen: false, 
+  }
 
   closeProjectsModal = () => {
     this.setState({ isModalOpen: false, cardData: null })
+    enableBodyScroll(this.targetElement)
   }
 
   openProjectsModal = cardId => {
     this.setState({ cardData: this.findModalContent(cardId), isModalOpen: true })
+    disableBodyScroll(this.targetElement)
   }
 
   findModalContent = cardId => this.props.projectData.filter(project => project.id === cardId)[0]
@@ -36,17 +42,7 @@ class Projects extends Component {
     )
 
     return (
-      <div 
-        className="projects flex-column cover-image" 
-        // style={{ backgroundImage: `
-        // linear-gradient(
-        //   to right bottom, 
-        //   rgb(0, 200, 255), 
-        //   rgba(68, 54, 149, 0.9)), 
-        //     url('./projects-background2.jpg')
-        //     ` 
-        //   }} 
-      >
+      <div className="projects flex-column cover-image" >
         <h2 className="projects--title page-title">
           projects
         </h2>
