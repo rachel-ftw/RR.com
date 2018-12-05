@@ -6,6 +6,7 @@ import './ProjectCard.css'
 
 const ProjectCard = ({ project: { image, title, id, technologies, type, ...rest}, handleClick }) => {
   // console.log(image)
+  let preview = Array.isArray(image) ? image[0] : image
   return (
   <div className="project">
     <div 
@@ -17,7 +18,7 @@ const ProjectCard = ({ project: { image, title, id, technologies, type, ...rest}
             to right bottom, 
             rgba(255, 174, 0, 1), 
             rgba(15, 255, 183, 1)), 
-            url('${image}')
+            url('${preview}')
         `,
       }}
     >

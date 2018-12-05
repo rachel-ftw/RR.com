@@ -57,7 +57,7 @@ class Projects extends Component {
         <Modal
           isOpen={isModalOpen}
           onClose={closeProjectsModal}
-          imageUrl={cardData ? cardData.image : undefined}
+          images={cardData ? cardData.image : undefined}
         >
           <ModalContent data={cardData}/>
         </Modal>

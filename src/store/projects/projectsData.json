@@ -1,15 +1,15 @@
 [
   {
-    "id":1,
+    "id": 1,
     "type": "code",
-    "technologies": ["Circle CI"],
+    "technologies": ["React", "GraphQL", "Apollo", "Prisma", "GraphQL Yoga", "Heroku"],
     "github": "https://github.com/rachel-ftw/goalie-local.git",
-    "image": "./uma.jpg",
-    "title": "LOLCHAIN",
-    "blurb": "Goalie is an internal project tracking dashboard."
+    "image": "./img/sickfits-screen1.png",
+    "title": "SickFits",
+    "blurb": "Sick is a storefront with full crud application, credit card charging, access permissions built on top of a Prisma/GraphQL data layer and deployed on Heroku."
   },
   {
-    "id":2,
+    "id": 2,
     "type": "code",
     "technologies": ["Pug", "Yarn", "Node", "JS", "CSS", "Mocha/Chai/Sinon/Istanbul", "Sequelize", "Express"],
     "github": "https://github.com/GuildCrafts/floworky",
@@ -18,21 +18,30 @@
     "blurb": "Floworky is an open source workflowy clone."
   },
   {
-    "id":3,
+    "id": 3,
     "type": "code",
     "technologies": ["Webpack", "Babel", "ESLint", "Sass", "Knex"],
     "github": "https://github.com/rachel-ftw/Trossello",
-    "image": "./water_background.jpg",
+    "image": "./img/water_background.jpg",
     "title": "TROSSELLO",
     "blurb": "Trossello is an open source Trello clone."
   },
   {
-    "id":4,
+    "id": 4,
     "type": "design",
-    "technologies": ["Photoshop"],
+    "technologies": ["Illusrator", "Premiere"],
     "github": "https://github.com/rachel-ftw/Trossello",
-    "image": "./water_background.jpg",
-    "title": "SOME DESIGN THING",
-    "blurb": "I'm a software engineer living in Oakland CA.  My early career focused on marketing and design, running a small branding company and leading marketing for a multimillion dollar manufacturer. After 5 years in those fields I realized that I was unahppy and board and got me to where I am today. I love software engineering because lets me solve interesting problems and make useful things. I'm delighted that I found things that address everything I'm good at, from working with people to problem solving to creative thinking."
+    "image": "./img/walk-cycle.gif",
+    "title": "Walk Cycles",
+    "blurb": "Having fun designing walk cycles. Characters designed in Illustrator and animated in Premiere."
+  },
+  {
+    "id": 5,
+    "type": "design",
+    "technologies": ["Illusrator", "Premiere"],
+    "github": "https://github.com/rachel-ftw/Trossello",
+    "image": ["./img/ux-socialMedia2.png", "./img/ux-socialMedia1.jpg"],
+    "title": "Social Media UX",
+    "blurb": "Having fun designing walk cycles. Characters designed in Illustrator and animated in Premiere."
   }
 ]

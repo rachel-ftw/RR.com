@@ -1,49 +1,26 @@
 import React, { Component } from 'react'
-import { clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { clearAllBodyScrollLocks } from 'body-scroll-lock'
 
 import './Modal.css'
 
 class Modal extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.myRef = React.createRef();
-  //   // this.targetRef = React.createRef();
-  // }
-  targetElement = null;
+  targetElement = null
 
   componentDidMount() {
-    // 3. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav). 
-    // this.targetElement = this.targetRef.current;
-    this.targetElement = document.querySelector('#modal');
- 
+    this.targetElement = document.querySelector('#modal')
   }
 
-  // showTargetElement = () => {
-  //   // ... some logic to show target element
-    
-  //   // 4. Disable body scroll
-  //   disableBodyScroll(this.targetElement);
-  // };
-
-  // hideTargetElement = () => {
-  //   // ... some logic to hide target element
-    
-  //   // 5. Re-enable body scroll
-  //   enableBodyScroll(this.targetElement);
-  // }
-
   componentWillUnmount() {
-    // 5. Useful if we have called disableBodyScroll for multiple target elements,
-    // and we just want a kill-switch to undo all that.
-    // OR useful for if the `hideTargetElement()` function got circumvented eg. visitor 
-    // clicks a link which takes him/her to a different page within the app.
-    clearAllBodyScrollLocks();
+     clearAllBodyScrollLocks()
   }
 
   render () {
-    const { isOpen, children, onClose, imageUrl } = this.props
-    const hasImage = imageUrl !== undefined ? 'has-image cover-image' : ''
-    const inlineStyle = imageUrl ? { backgroundImage: `url('${imageUrl}')` } : {}
+    const { isOpen, children, onClose, images } = this.props
+    const hasImage = images !== undefined ? 'has-image cover-image' : ''
+
+    //TODO sort out carousel for array of images
+    const image = Array.isArray(images) ? images[0] : images
+    const inlineStyle = images ? { backgroundImage: `url('${image}')` } : {}
 
     return (
       isOpen ? (
