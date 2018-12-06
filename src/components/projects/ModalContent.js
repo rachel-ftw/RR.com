@@ -8,11 +8,11 @@ const ModalContent = ({ data: { title, blurb, type, technologies } }) => {
   const techUsed = technologies.map((tech, index) => <Button key={`tech-${index}`} content={tech} size="small" flat />)
   
   return (
-  <div className="modal--container">
-    <span className="modal--type">{type}</span>
-    <h3 className="modal--title">{title}</h3>
-    <div className="modal--tech flex-row">{techUsed}</div>
-    <p className="modal--content">{blurb}</p>
+  <div className="projectModal--container">
+    <span className="projectModal--type">{type}</span>
+    <h3 className="projectModal--title">{title}</h3>
+    <div className="projectModal--tech flex-row">{techUsed}</div>
+    <p className="projectModal--content">{blurb}</p>
   </div>
 )}
 

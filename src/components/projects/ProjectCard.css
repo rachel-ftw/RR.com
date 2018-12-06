@@ -21,19 +21,21 @@
   transition: all ease-in .5s;
 }
 
-.project--text-title {
+
+.project--content {
   position: absolute;
   top: 40px;
+}
+
+.project--content_text-title {
   color: #333;
   border: #000 3px solid;
   background-color: #fff;
   font-size: 1.5em;
   padding: 10px 10px 5px 10px;
+  margin-bottom: 5px;
 }
 
-.project--text-buttons {
-  position: absolute;
-  top: 120px;
+.project--content_text-buttons {
   flex-wrap: wrap;
 }
-

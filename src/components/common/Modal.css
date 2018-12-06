@@ -1,4 +1,4 @@
-.modal-backdrop {
+.modal--backdrop {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -9,24 +9,21 @@
   z-index: 100;
 }
 
-.modal-window {
-  background-color: rgba(240, 240, 240, 1);
+.modal--window {
+  background-color: rgb(255, 255, 255);
   margin: 10px auto;
+  padding: 10px 20px;
   height: 80vh;
   z-index: 102;
 }
 
-.modal-header {
+.modal--header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.modal-header.has-image {
-  height: 30vh;
-}
-
-.modal-header-close-icon span {
+.modal--header-close-icon span {
   color: rgb(37, 65, 45);
   font-size: 2em;
   margin: 0;
@@ -36,7 +33,9 @@
   cursor: pointer;
 }
 
-.modal-body {
+.modal--body {
   padding: 10px;
+  margin: 0 auto;
   color: rgb(58, 58, 58);
+  max-width: 800px;
 }

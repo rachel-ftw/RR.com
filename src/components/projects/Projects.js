@@ -44,12 +44,13 @@ class Projects extends Component {
     return (
       <div className="projects flex-column cover-image" >
         <h2 className="projects--title page-title">
-          projects
+          work
         </h2>
         <div className="projects--buttons flex-row">
+          <Button color="white" content="all" onClick={() => handleSortCards('all')} />
           <Button color="white" content="code" onClick={() => handleSortCards('code')} />
           <Button color="white" content="design" onClick={() => handleSortCards('design')} />
-          <Button color="white" content="all" onClick={() => handleSortCards('all')} />
+          <Button color="white" content="writing" onClick={() => handleSortCards('writing')} />
         </div>
         <div className="projects--cards">
           {projectCards}

@@ -26,6 +26,10 @@
 }
 
 @media all and (min-width: 736px) {
+  .landing {
+    padding-top: 100px;
+  }
+
   .landing--blurb {
     max-width: 800px;
   }
