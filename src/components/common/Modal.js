@@ -19,8 +19,7 @@ class Modal extends Component {
     const hasImage = images !== undefined ? 'has-image cover-image' : ''
 
     //TODO sort out carousel for array of images
-    const image = Array.isArray(images) ? images[0] : images
-    const inlineStyle = images ? { backgroundImage: `url('${image}')` } : {}
+    const inlineStyle = images ? { backgroundImage: `url('${images[0]}')` } : {}
 
     return (
       isOpen ? (

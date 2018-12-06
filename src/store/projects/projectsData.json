@@ -1,37 +1,44 @@
 [
   {
+    "id": 3,
+    "type": "code",
+    "technologies": ["React", "Webpack", "Sass"],
+    "link": "#",
+    "image": [
+      "./img/portfolio/WF-fullscreen1.png", 
+      "./img/portfolio/WF-fullscreen2.png", 
+      "./img/portfolio/WF-fullscreen3.png", 
+      "./img/portfolio/WF-mobile1.png", 
+      "./img/portfolio/WF-mobile2.png", 
+      "./img/portfolio/WF-mobile3.png"
+    ],
+    "title": "Wells fargo",
+    "blurb": "I'm unfortunately unable to share any code from my work with Wells Fargo, but here are some screen shots of the products I contributed to."
+  },
+  {
     "id": 1,
     "type": "code",
     "technologies": ["React", "GraphQL", "Apollo", "Prisma", "GraphQL Yoga", "Heroku"],
-    "github": "https://github.com/rachel-ftw/goalie-local.git",
-    "image": "./img/sickfits-screen1.png",
+    "link": "#",
+    "image": ["./img/portfolio/sickfits-screen1.png"],
     "title": "SickFits",
     "blurb": "Sick is a storefront with full crud application, credit card charging, access permissions built on top of a Prisma/GraphQL data layer and deployed on Heroku."
   },
   {
     "id": 2,
     "type": "code",
-    "technologies": ["Pug", "Yarn", "Node", "JS", "CSS", "Mocha/Chai/Sinon/Istanbul", "Sequelize", "Express"],
-    "github": "https://github.com/GuildCrafts/floworky",
-    "image": "./img/Brutalized-Gainsborough.jpg",
-    "title": "FLOWORKY",
-    "blurb": "Floworky is an open source workflowy clone."
-  },
-  {
-    "id": 3,
-    "type": "code",
-    "technologies": ["Webpack", "Babel", "ESLint", "Sass", "Knex"],
-    "github": "https://github.com/rachel-ftw/Trossello",
-    "image": "./img/water_background.jpg",
-    "title": "TROSSELLO",
-    "blurb": "Trossello is an open source Trello clone."
+    "technologies": ["Pug", "Yarn", "Node", "JS", "CSS", "Sequelize", "Express"],
+    "link": "#",
+    "image": ["./img/Brutalized-Gainsborough.jpg"],
+    "title": "Coach queue",
+    "blurb": "Coach queue is a time tracker and student request tool built for Learner's Guild."
   },
   {
     "id": 4,
     "type": "design",
     "technologies": ["Illusrator", "Premiere"],
-    "github": "https://github.com/rachel-ftw/Trossello",
-    "image": "./img/walk-cycle.gif",
+    "link": "https://github.com/rachel-ftw/Trossello",
+    "image": ["./img/portfolio/walk-cycle.gif"],
     "title": "Walk Cycles",
     "blurb": "Having fun designing walk cycles. Characters designed in Illustrator and animated in Premiere."
   },
@@ -39,8 +46,11 @@
     "id": 5,
     "type": "design",
     "technologies": ["Illusrator", "Premiere"],
-    "github": "https://github.com/rachel-ftw/Trossello",
-    "image": ["./img/ux-socialMedia2.png", "./img/ux-socialMedia1.jpg"],
+    "link": "https://github.com/rachel-ftw/Trossello",
+    "image": [
+      "./img/portfolio/ux-socialMedia2.png", 
+      "./img/portfolio/ux-socialMedia1.jpg"
+    ],
     "title": "Social Media UX",
     "blurb": "Having fun designing walk cycles. Characters designed in Illustrator and animated in Premiere."
   }
