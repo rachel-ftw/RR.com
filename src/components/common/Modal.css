@@ -13,7 +13,6 @@
   background-color: rgb(255, 255, 255);
   margin: 10px auto;
   padding: 10px 20px;
-  height: 80vh;
   z-index: 102;
 }
 
@@ -38,4 +37,11 @@
   margin: 0 auto;
   color: rgb(58, 58, 58);
   max-width: 800px;
+  max-height: 80vh;
+}
+
+@media all and (min-width: 1000px) {
+  .modal--window {
+    max-width: 80vw;
+  }
 }

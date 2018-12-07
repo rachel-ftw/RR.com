@@ -8,7 +8,7 @@ const ProjectCard = ({
   handleClick,
   project: { 
     id, 
-    image, 
+    images, 
     technologies, 
     title, 
     type,
@@ -24,7 +24,7 @@ const ProjectCard = ({
           to right bottom, 
           rgba(255, 174, 0, 1), 
           rgba(15, 255, 183, 1)), 
-          url('${image[0]}')
+          url('${images[0]}')
           `,
         }}
         >

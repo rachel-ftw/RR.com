@@ -1,3 +1,7 @@
+/**************************************************************
+PROJECT LEVEL STYLING 
+**************************************************************/
+
 /*******************************
 FONTS
 *******************************/
@@ -72,9 +76,8 @@ FONTS
 
 
 /*******************************
-PROJECT LEVEL STYLING 
+General
 *******************************/
-
 body {
   margin: 0;
   padding: 0;
@@ -93,26 +96,6 @@ body {
   margin: 0 10px;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
 .cover-image {
   background-size: cover;
   background-position: center;
@@ -128,10 +111,6 @@ h2, h3 {
   font-weight: 900;
   letter-spacing: 1px;
 }
-
-/* h3 {
-  font-family: 'Lora', serif;
-} */
 
 p {
   line-height: 2em;
@@ -150,4 +129,49 @@ a {
   padding: .5em 0 .5em 0;
   margin: 0;
   text-align: center;
+}
+
+
+
+/*******************************
+grid
+*******************************/
+.grid-2-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+/*******************************
+flex
+*******************************/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
 }

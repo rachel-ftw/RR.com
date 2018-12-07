@@ -4,7 +4,7 @@ import { TiSocialDribbbleCircular, TiSocialGithubCircular, TiSocialLinkedinCircu
 import './SocialMedia.css'
 
 const SocialMedia = () => (
-  <div className="sm-icon-group">
+  <div className="sm-icon-group grid-4-col">
     <TiSocialLinkedinCircular />
     <TiSocialGithubCircular />
     <TiSocialDribbbleCircular />

@@ -1,7 +1,5 @@
 .sm-icon-group {
   margin: 5px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   width: 200px;

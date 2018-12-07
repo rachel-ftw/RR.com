@@ -4,7 +4,7 @@
     "type": "code",
     "technologies": ["React", "Webpack", "Sass"],
     "link": "#",
-    "image": [
+    "images": [
       "./img/portfolio/WF-fullscreen1.png", 
       "./img/portfolio/WF-fullscreen2.png", 
       "./img/portfolio/WF-fullscreen3.png", 
@@ -20,7 +20,7 @@
     "type": "code",
     "technologies": ["React", "GraphQL", "Apollo", "Prisma", "GraphQL Yoga", "Heroku"],
     "link": "#",
-    "image": ["./img/portfolio/sickfits-screen1.png"],
+    "images": ["./img/portfolio/sickfits-screen1.png"],
     "title": "SickFits",
     "blurb": "Sick is a storefront with full crud application, credit card charging, access permissions built on top of a Prisma/GraphQL data layer and deployed on Heroku."
   },
@@ -29,7 +29,7 @@
     "type": "code",
     "technologies": ["Pug", "Yarn", "Node", "JS", "CSS", "Sequelize", "Express"],
     "link": "#",
-    "image": ["./img/Brutalized-Gainsborough.jpg"],
+    "images": ["./img/Brutalized-Gainsborough.jpg"],
     "title": "Coach queue",
     "blurb": "Coach queue is a time tracker and student request tool built for Learner's Guild."
   },
@@ -38,7 +38,7 @@
     "type": "design",
     "technologies": ["Illusrator", "Premiere"],
     "link": "https://github.com/rachel-ftw/Trossello",
-    "image": ["./img/portfolio/walk-cycle.gif"],
+    "images": ["./img/portfolio/walk-cycle.gif"],
     "title": "Walk Cycles",
     "blurb": "Having fun designing walk cycles. Characters designed in Illustrator and animated in Premiere."
   },
@@ -47,7 +47,7 @@
     "type": "design",
     "technologies": ["Illusrator", "Premiere"],
     "link": "https://github.com/rachel-ftw/Trossello",
-    "image": [
+    "images": [
       "./img/portfolio/ux-socialMedia2.png", 
       "./img/portfolio/ux-socialMedia1.jpg"
     ],
@@ -59,8 +59,8 @@
     "type": "writing",
     "technologies": ["Illusrator", "Premiere"],
     "link": "https://code.likeagirl.io/the-this-keyword-in-javascript-1e8487ae296a",
-    "image": ["./img/portfolio/blog-thisKeyword.png"],
+    "images": ["./img/portfolio/blog-thisKeyword.png"],
     "title": "The `this` keyword in Javascript",
-    "blurb": "Having fun designing walk cycles. Characters designed in Illustrator and animated in Premiere."
+    "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in malesuada eros. Vivamus tortor massa, facilisis ac dui at, facilisis dictum nisl. Praesent id nulla aliquet, eleifend ligula ut, fermentum sapien. Pellentesque nisi est, fermentum imperdiet dictum consequat, maximus in arcu. Cras ullamcorper, neque eget egestas convallis, elit dui ullamcorper metus, ut viverra arcu nibh at magna. Proin sit amet velit eget felis rutrum ultricies et eget eros. Vivamus efficitur purus sed tortor posuere, id consequat risus finibus. Sed convallis nibh eu pellentesque consequat. Nunc eros turpis, tristique eget mauris in, consectetur ullamcorper arcu. Donec viverra mattis sem, posuere placerat ligula ornare ac. Pellentesque laoreet massa ipsum, non pulvinar est condimentum nec. Nullam sit amet lobortis neque, vitae tempor massa."
   }
 ]

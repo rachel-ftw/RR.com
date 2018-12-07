@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Projects from './Projects'
-import { sortProjectCards } from '../../store/projects/actions'
+import { sortProjectCards } from '../../store/actions'
 
 const ProjectsContainer = props => <Projects {...props} />
 

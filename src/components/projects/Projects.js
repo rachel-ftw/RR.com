@@ -55,12 +55,8 @@ class Projects extends Component {
         <div className="projects--cards">
           {projectCards}
         </div>
-        <Modal
-          isOpen={isModalOpen}
-          onClose={closeProjectsModal}
-          images={cardData ? cardData.image : undefined}
-        >
-          <ModalContent data={cardData}/>
+        <Modal isOpen={isModalOpen} onClose={closeProjectsModal}>
+          <ModalContent data={cardData} />
         </Modal>
       </div>
     )
