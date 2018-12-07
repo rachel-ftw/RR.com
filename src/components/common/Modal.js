@@ -22,7 +22,7 @@ class Modal extends Component {
           <div className="modal--window">
             <div className="modal--header flex-row">
               <div onClick={onClose} className="modal--header-close-icon">
-                <span>X</span>
+                <span>&times;</span>
               </div>
             </div>
             <div className="modal--body">
