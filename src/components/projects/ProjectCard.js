@@ -14,10 +14,9 @@ const ProjectCard = ({
     type,
   }, 
 }) => (
-  <div className="project">
+  <div className="project" onClick={() => handleClick(id)}>
     <div 
       className="project--image cover-image" 
-      onClick={() => handleClick(id)}
       style={{
         backgroundImage: `
         linear-gradient(

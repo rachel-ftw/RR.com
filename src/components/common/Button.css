@@ -27,7 +27,15 @@
   color: black;
 }
 
+.dark {
+  background-color: #333;
+  color: #ccc;
+}
 
+.pink {
+  background-color: rgb(255, 0, 255);
+  color: #fff;
+}
 
 
 
@@ -40,15 +48,6 @@
   font-size: .4em;
   padding: 3px 5px;
   margin: 1px;
-}
-
-.micro.dark {
-  background-color: #333;
-  color: #ccc;
-}
-
-.micro.pink {
-  background-color: rgb(255, 0, 255);
 }
 
 .small {
