@@ -5,13 +5,14 @@ import Button from '../common/Button'
 import Modal from '../common/Modal'
 import ModalContent from './ModalContent'
 import ProjectCard from './ProjectCard'
+import { projectColors } from '../common/utilities'
 
 import './Projects.css'
 
 class Projects extends Component {
-  state = { 
+  state = {
     cardData: null,
-    isModalOpen: false, 
+    isModalOpen: false,
   }
 
   closeProjectsModal = () => {
@@ -20,11 +21,15 @@ class Projects extends Component {
   }
 
   openProjectsModal = cardId => {
-    this.setState({ cardData: this.findModalContent(cardId), isModalOpen: true })
+    this.setState({
+      cardData: this.findModalContent(cardId),
+      isModalOpen: true,
+    })
     disableBodyScroll(this.targetElement)
   }
 
-  findModalContent = cardId => this.props.projectData.filter(project => project.id === cardId)[0]
+  findModalContent = cardId =>
+    this.props.projectData.filter(project => project.id === cardId)[0]
 
   handleSortCards = btnType => this.props.sortProjectCards(btnType)
 
@@ -47,10 +52,22 @@ class Projects extends Component {
           work
         </h2>
         <div className="projects--buttons flex-row">
-          <Button color="white" content="all" onClick={() => handleSortCards('all')} />
-          <Button color="white" content="code" onClick={() => handleSortCards('code')} />
-          <Button color="white" content="design" onClick={() => handleSortCards('design')} />
-          <Button color="white" content="writing" onClick={() => handleSortCards('writing')} />
+          <Button
+            color="white"
+            content="all"
+            onClick={() => handleSortCards('all')} />
+          <Button
+            color={projectColors.code}
+            content="code"
+            onClick={() => handleSortCards('code')} />
+          <Button
+            color={projectColors.design}
+            content="design"
+            onClick={() => handleSortCards('design')} />
+          <Button
+            color={projectColors.writing}
+            content="writing"
+            onClick={() => handleSortCards('writing')} />
         </div>
         <div className="projects--cards">
           {projectCards}

@@ -37,14 +37,22 @@
   color: #fff;
 }
 
+.purple {
+  background-color: rgb(75, 0, 130);
+  color: #fff;
+}
+
+.yellow {
+  background-color: rgb(240, 209, 20);
+  color: #fff;
+}
+
 
 
 /****** sizes ******/
 
 .micro {
   border: 0;
-  background: #333;
-  color: #fff;
   font-size: .4em;
   padding: 3px 5px;
   margin: 1px;
